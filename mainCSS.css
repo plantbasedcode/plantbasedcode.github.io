@@ -1,0 +1,163 @@
+﻿
+body {
+    font-family: 'Trebuchet MS', 'Helvetica', sans-serif;
+    margin: 0;
+}
+
+header {
+    padding: 0;
+    margin: 1.25rem 0;
+    font-size: 2rem;
+}
+
+/*Flex made this possible - learn more later*/
+header .row,
+footer .row {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    font-weight: 400;
+    color: #436a3d;
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    color: #698365;
+}
+
+nav a {
+    color: #698365;
+}
+
+nav a:hover {
+    color: #836569;
+    text-decoration: none;
+}
+
+header p {
+    padding: 0;
+    margin:0 1rem;
+}
+
+#welcome-message {
+    display: flex;
+    background-image: url(https://source.unsplash.com/pCU3zt9OEn0);
+    background-size: cover;
+    height: 25.25rem;
+    margin-top: 2rem;
+    color: whitesmoke;
+    text-shadow: 0.1rem 0.1rem 0.1rem #000000;
+    text-align: center;
+}
+
+#welcome-message h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem #000;
+    /* "Position+Transform" worked as a fix before I switched the html h2 tag to col-sm-12 so that text-center would work
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+#welcome-message p {
+    font-size: 1rem;
+}
+
+#welcome-message a {
+    color: whitesmoke;
+    text-shadow: 0.1rem 0.1rem 0.1rem #000000;
+    text-decoration: underline;
+}
+
+#welcome-message a:hover {
+    color: #836569;
+}
+
+#gallery-id {
+    color: #436a3d;
+    margin-top: 2rem;
+}
+
+#gallery-id h2 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+/*flex-wrap: wrap brings all the images inside the border of every gallery-item*/
+.gallery {
+    margin-top: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+/*gallery item class selector for figure tag - the frames*/
+.gallery-item {
+    border: .4rem solid #000;
+    margin: 1.25rem;
+}
+
+/*class selector for img tag inside figure*/
+.thumbnail {
+   height: 18rem;
+   width: 18rem;
+   object-fit: cover;
+}
+
+/*End Gallery*/
+
+
+#contact {
+    background-image: url(https://source.unsplash.com/3jKqzhpiGuk);
+    background-size: cover;
+    color: whitesmoke;
+    text-shadow: 0.1rem 0.1rem 0.1rem #000000;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 4rem;
+    font-weight: 200;
+    text-shadow: 0.2rem 0.2rem 0.2rem #000;
+}
+
+footer {
+    color: #698365;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
+
+
+
+
+/* Button from scratch
+.contact-btn {
+    float: right;
+    color: whitesmoke;
+}
+
+.contact-btn a {
+    margin-right: 30px;
+    padding: 8px 18px;
+    border: 1px solid #FFF;
+}
+*/
+
+/*Active + bottom: 2px adds a button like reaction on click without needing JS
+.contact-btn a:active {
+    position: relative;
+    bottom: 2px;
+}
+
+*/
