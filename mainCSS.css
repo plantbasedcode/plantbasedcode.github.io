@@ -133,6 +133,7 @@ header p {
 footer {
     color: #698365;
     margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 footer .col-sm-8 {
@@ -146,8 +147,8 @@ footer ul {
 }
 
 footer li img {
-    width: 32 px;
-    height: 32 px;
+    width: 2rem;
+    height: 2rem;
 }
 
 
