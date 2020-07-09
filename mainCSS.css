@@ -133,12 +133,16 @@ header p {
 footer {
     color: #698365;
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 footer .col-sm-8 {
     display: flex;
     justify-content: flex-end;
+}
+
+footer .col-sm-1 {
+    margin-left: 2rem;
 }
 
 /*not sure if i need list-style line*/
@@ -147,8 +151,8 @@ footer ul {
 }
 
 footer li img {
-    width: 2rem;
-    height: 2rem;
+    width: 4rem;
+    height: 3rem;
 }
 
 
