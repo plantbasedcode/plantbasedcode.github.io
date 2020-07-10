@@ -49,6 +49,7 @@ header p {
     background-size: cover;
     margin-top: 2rem;
     color: whitesmoke;
+    font-size: 2rem;
     text-shadow: 0.1rem 0.1rem 0.1rem #000000;
     text-align: center;
 }
@@ -107,7 +108,15 @@ header p {
     margin-bottom: 2rem;
     color: whitesmoke;
     font-size: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.1rem #000000;
     text-align: center;
+    justify-content: center;
+}
+
+#skills h2 {
+    font-size: 4rem;
+    font-weight: 200;
+    text-shadow: 0.2rem 0.2rem 0.2rem #000;
 }
 
 /*CONTACT*/
@@ -157,4 +166,8 @@ footer li img {
 #behance-button {
     width: 4rem;
     height: 3rem;
+}
+
+.underline {
+    text-decoration: underline;
 }
