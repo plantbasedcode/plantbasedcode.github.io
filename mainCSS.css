@@ -1,4 +1,4 @@
-﻿
+﻿/*Color Scheme 01: #436a3d (Dark Green), #698365 (Light Green),  #836569 (Rose Brown?), WhiteSmoke*/
 body {
     font-family: 'Trebuchet MS', 'Helvetica', sans-serif;
     margin: 0;
@@ -42,12 +42,11 @@ header p {
     padding: 0;
     margin:0 1rem;
 }
-
+/*Welcome Message*/
 #welcome-message {
     display: flex;
-    background-image: url(https://source.unsplash.com/pCU3zt9OEn0);
+    background-image: url(images/galleryArt/Rose_Afro_2019.jpg);
     background-size: cover;
-    height: 25.25rem;
     margin-top: 2rem;
     color: whitesmoke;
     text-shadow: 0.1rem 0.1rem 0.1rem #000000;
@@ -55,9 +54,9 @@ header p {
 }
 
 #welcome-message h2 {
-    font-size: 4rem;
-    font-weight: 700;
     margin-bottom: 2.5rem;
+    font-size: 4rem;
+    font-weight: 200;
     text-shadow: 0.2rem 0.2rem 0.2rem #000;
     /* "Position+Transform" worked as a fix before I switched the html h2 tag to col-sm-12 so that text-center would work
     position: relative;
@@ -66,20 +65,8 @@ header p {
     transform: translate(-50%, -50%); */
 }
 
-#welcome-message p {
-    font-size: 1rem;
-}
 
-#welcome-message a {
-    color: whitesmoke;
-    text-shadow: 0.1rem 0.1rem 0.1rem #000000;
-    text-decoration: underline;
-}
-
-#welcome-message a:hover {
-    color: #836569;
-}
-
+/*Gallery Start*/
 #gallery-id {
     color: #436a3d;
     margin-top: 2rem;
@@ -101,7 +88,7 @@ header p {
 
 /*gallery item class selector for figure tag - the frames*/
 .gallery-item {
-    border: .4rem solid #000;
+    /*border: .4rem solid #000;*/
     margin: 1.25rem;
 }
 
@@ -114,7 +101,16 @@ header p {
 
 /*End Gallery*/
 
+/*SKILLS*/
+#skills {
+    background-image: linear-gradient(#698365, #436a3d);
+    margin-bottom: 2rem;
+    color: whitesmoke;
+    font-size: 2rem;
+    text-align: center;
+}
 
+/*CONTACT*/
 #contact {
     background-image: url(https://source.unsplash.com/3jKqzhpiGuk);
     background-size: cover;
@@ -130,6 +126,7 @@ header p {
     text-shadow: 0.2rem 0.2rem 0.2rem #000;
 }
 
+/*FOOTER*/
 footer {
     color: #698365;
     margin-top: 1rem;
@@ -145,36 +142,19 @@ footer .col-sm-1 {
     margin-left: 2rem;
 }
 
-/*not sure if i need list-style line*/
+/*removes bullet points*/
 footer ul {
     list-style: none;
+} 
+
+/*behance icon was made in 1200x904px canvas so 4:3 ratio keeps it from being warped*/
+footer li img {
+    width: 4rem;
+    height: 4rem;
 }
 
-footer li img {
+/*github icon was made in 512x512px square canvas so no need to warp*/
+#behance-button {
     width: 4rem;
     height: 3rem;
 }
-
-
-
-
-/* Button from scratch
-.contact-btn {
-    float: right;
-    color: whitesmoke;
-}
-
-.contact-btn a {
-    margin-right: 30px;
-    padding: 8px 18px;
-    border: 1px solid #FFF;
-}
-*/
-
-/*Active + bottom: 2px adds a button like reaction on click without needing JS
-.contact-btn a:active {
-    position: relative;
-    bottom: 2px;
-}
-
-*/

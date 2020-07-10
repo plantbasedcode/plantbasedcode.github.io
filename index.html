@@ -1,5 +1,8 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
+
 <html>
+
 <head>
     <!--Webpage title-->
     <title>David Seth Designs</title>
@@ -11,31 +14,35 @@
     <link rel="stylesheet" type="text/css" href="mainCSS.css">
     <!--Link JS ??-->
 </head>
+
 <body>
+
+    <!--Header/NavBar at TOP-->
     <header class="container">
         <div class="row">
             <h1 class="col-sm-4">David Seth Designs</h1>
-            <!--Navigation bar - pull down menu? separate inline buttons? radial interactive button (like make it look like a paint pallet but have the dip notches for color be button links to contact, portfolio etc)? In-page anchor!!-->
             <nav class="col-sm-8">
                 <a href="#gallery-id"><p>Art Gallery</p></a>
-                <!-- <p>Code Projects</p> -->
-                <!-- <p>about me and skills (icons for programs I know how to use?)</p>-->
+                <a href="#skills"><p>Skills</p></a>
                 <a href="#contact"><p>Contact</p></a>
             </nav>
         </div>
     </header>
+
     <main>
-    <!--Welcome: bkgd img + welcome/under construction message-->
+
+    <!--Welcome: bkgd img + welcome/under construction message?-->
     <section class="jumbotron jumbotron-fluid" id="welcome-message">
         <div class="container">
             <div class="row">
-                <h2 class="col-sm-12">Welcome</h2>
+                <h2 class="col-sm-12">David Seth Designs</h2>
             </div>
             <div class="row">
-                <p class="col-sm-12"> Hey there :) This site is under construction - a mere sapling that's still growing. ETA late 2020. Feel free to take a look around at the gallery as it develops. The gallery is currently a mix of civil rights, lgbtqia+, love and vegan food photos from a stock site called <a target="_blank" href="https://unsplash.com/">Unsplash</a>. In the future I will have gallery photos that are from my own portfolio. This is a project for me to build up my webdev skills.<br /> <br />Thanks for looking! <a href="#contact">Questions?</a></p>
+                <h3 class="col-sm-12">My name is David Seth Weitzel - I am a digital artist and jr. web developer.</h3>
             </div>
         </div>
     </section>
+
     <!-- GALLERY -->
     <section class="container">
         <div class="row" id="gallery-id">
@@ -43,35 +50,32 @@
         </div>
         <div class="gallery">
             <figure class="gallery-item">
-                <img class="thumbnail" src="https://source.unsplash.com/featured/?black_lives_matter" alt="black lives matter" />
+                <img class="thumbnail" src="images/galleryArt/craftEspressoLogo.gif" alt="Motion graphic of Craft Espresso logo." />
             </figure>
             <figure class="gallery-item">
-                <img class="thumbnail" src="https://source.unsplash.com/featured/?interracial_couple" alt="interracial couple" />
+                <img class="thumbnail" src="images/galleryArt/Rose_Afro_2019.jpg" alt="A beautiful black woman with afro made of roses peering through a magnifying glass whose lens is reflecting another rose." />
             </figure>
             <figure class="gallery-item">
-                <img class="thumbnail" src="https://source.unsplash.com/featured/?lgbtqia" alt="lgbtqia" />
+                <img class="thumbnail" src="images/galleryArt/Fan_Art_Scavengers.png" alt="A bwwm interracial couple in alien world - my fan art of the short film scavengers by Joseph Bennet and Charles Huettner." />
             </figure>
             <figure class="gallery-item">
-                <img class="thumbnail" src="https://source.unsplash.com/featured/?vegan" alt="vegan" />
-            </figure>
-            <figure class="gallery-item">
-                <img class="thumbnail" src="https://source.unsplash.com/featured/?antiracist" alt="antiracist" />
-            </figure>
-            <figure class="gallery-item">
-                <img class="thumbnail" src="https://source.unsplash.com/featured/?love" alt="love" />
-            </figure>
-            <figure class="gallery-item">
-                <img class="thumbnail" src="https://source.unsplash.com/featured/?afro_hair" alt="afro hair" />
-            </figure>
-            <figure class="gallery-item">
-                <img class="thumbnail" src="https://source.unsplash.com/featured/?blm" alt="blm" />
-            </figure>
-            <figure class="gallery-item">
-                <img class="thumbnail" src="https://source.unsplash.com/featured/?afropunk" alt="afropunk style" />
+                <img class="thumbnail" src="images/galleryArt/adventureTime.gif" alt="Animated Gif of characters from Adventure Time by Pendelton Ward." />
             </figure>
         </div>
     </section>
-    <!--Skills Section? with icons of programs i use and/or cv skill list-->
+
+    <!--Skills-->
+    <section class="container" id="skills">
+        <div class="row">
+            <h2 class="col-sm-12">Skills</h2>
+        </div>
+        <div class="row">
+            <h4 class="col-sm-6">Visual Art</h4>
+            <h4 class="col-sm-6">Coding</h4>
+        </div>
+        <!--Skills Section Place Holder with icons of programs i use and/or cv skill list?-->
+    </section>
+
 
     <!--CONTACT Section-->
     <section class="jumbotron jumbotron-fluid" id="contact">
@@ -80,17 +84,24 @@
                 <h2 class="col-sm-12">Contact Me</h2>
             </div>
             <div class="row">
-                <p class="col-sm-12">I'm currently available for freelance! <br />Say hello: <strong>davidsethdesigns@gmail.com</strong></p>
+                <p class="col-sm-12">I'm currently available for freelance!<br /><strong>davidsethdesigns@gmail.com</strong></p>
             </div>
         </div>
     </section>
+
     </main>
+
     <!--FOOTER-->
     <footer class="container">
         <div class="row">
             <p class="col-sm-4">&copy; 2020 David Seth Designs</p>
             <ul class="col-sm-8">
                 <li class="col-sm-1">
+                    <a href="https://www.linkedin.com/in/davidsethweitzel" target="_blank">
+                        <img src="images/iconLinkedIn.png" alt="LinkedIn logo" />
+                    </a>
+                </li>
+                <li id="behance-button" class="col-sm-1">
                     <a href="https://www.behance.net/davidsethdesigns" target="_blank">
                         <img src="images/iconBehanceLightGreen.png" alt="behance logo" />
                     </a>
@@ -103,5 +114,7 @@
             </ul>
         </div>
     </footer>
+
 </body>
+
 </html>
