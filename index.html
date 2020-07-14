@@ -1,5 +1,8 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
+
 <html>
+
 <head>
     <!--Webpage title-->
     <title>David Seth Designs</title>
@@ -11,31 +14,35 @@
     <link rel="stylesheet" type="text/css" href="mainCSS.css">
     <!--Link JS ??-->
 </head>
+
 <body>
+
+    <!--Header/NavBar at TOP-->
     <header class="container">
         <div class="row">
             <h1 class="col-sm-4">David Seth Designs</h1>
-            <!--Navigation bar - pull down menu? separate inline buttons? radial interactive button (like make it look like a paint pallet but have the dip notches for color be button links to contact, portfolio etc)? In-page anchor!!-->
             <nav class="col-sm-8">
                 <a href="#gallery-id"><p>Art Gallery</p></a>
-                <!-- <p>Code Projects</p> -->
-                <!-- <p>about me and skills (icons for programs I know how to use?)</p>-->
+                <a href="#skills"><p>Skills</p></a>
                 <a href="#contact"><p>Contact</p></a>
             </nav>
         </div>
     </header>
+
     <main>
-    <!--Welcome: bkgd img + welcome/under construction message-->
+
+    <!--Welcome: bkgd img + welcome/under construction message?-->
     <section class="jumbotron jumbotron-fluid" id="welcome-message">
         <div class="container">
             <div class="row">
-                <h2 class="col-sm-12">Welcome</h2>
+                <h2 class="col-sm-12">David Seth Designs</h2>
             </div>
             <div class="row">
-                <p class="col-sm-12"> Hey there :) This site is under construction - a mere sapling that's still growing. ETA late 2020. Feel free to take a look around at the gallery as it develops. The gallery is currently a mix of civil rights, lgbtqia+, love and vegan food photos from a stock site called <a target="_blank" href="https://unsplash.com/">Unsplash</a>. In the future I will have gallery photos that are from my own portfolio. This is a project for me to build up my webdev skills.<br /> <br />Thanks for looking! <a href="#contact">Questions?</a></p>
+                <h3 class="col-sm-12">My name is David Seth Weitzel - I am a digital artist and jr. web developer.</h3>
             </div>
         </div>
     </section>
+
     <!-- GALLERY -->
     <section class="container">
         <div class="row" id="gallery-id">
@@ -43,35 +50,102 @@
         </div>
         <div class="gallery">
             <figure class="gallery-item">
-                <img class="thumbnail" src="https://source.unsplash.com/featured/?black_lives_matter" alt="black lives matter" />
+                <img class="thumbnail" src="images/galleryArt/statueWoman1.png" alt="A statue of a woman draped in loose robes with seashells convering her breasts." />
             </figure>
             <figure class="gallery-item">
-                <img class="thumbnail" src="https://source.unsplash.com/featured/?interracial_couple" alt="interracial couple" />
+                <img class="thumbnail" src="images/galleryArt/Midnight_Gospel.png" alt="Fan Art! Clancy from Midnight Gospel entering the simulator as it malfunctions." />
             </figure>
             <figure class="gallery-item">
-                <img class="thumbnail" src="https://source.unsplash.com/featured/?lgbtqia" alt="lgbtqia" />
+                <img class="thumbnail" src="images/galleryArt/May_4.png" alt="Fan Art! My redesign of Chewbacca the Wookie for May the 4th 2020." />
             </figure>
             <figure class="gallery-item">
-                <img class="thumbnail" src="https://source.unsplash.com/featured/?vegan" alt="vegan" />
+                <img class="thumbnail" src="images/galleryArt/DSMH_motionfx.gif" alt="Motion graphic that reads DSMH in a read square." />
             </figure>
             <figure class="gallery-item">
-                <img class="thumbnail" src="https://source.unsplash.com/featured/?antiracist" alt="antiracist" />
+                <img class="thumbnail" src="images/galleryArt/GlibAndTibMaryAndTheWitchesFlower.png" alt="Fan Art! 2 cats, Glib and Tib, from Mary and the witches flower lounging in the grass." />
             </figure>
             <figure class="gallery-item">
-                <img class="thumbnail" src="https://source.unsplash.com/featured/?love" alt="love" />
+                <img class="thumbnail" src="images/galleryArt/Rock_Lee.png" alt="Fan Art! Rock Lee's face from Naruto in his drunken fist/drunken monkey martial arts pose." />
             </figure>
             <figure class="gallery-item">
-                <img class="thumbnail" src="https://source.unsplash.com/featured/?afro_hair" alt="afro hair" />
+                <img class="thumbnail" src="images/galleryArt/fanArtMilesMorales.png" alt="Fan Art! Miles Morales in his Spidey outfit from Into the Spiderverse." />
             </figure>
             <figure class="gallery-item">
-                <img class="thumbnail" src="https://source.unsplash.com/featured/?blm" alt="blm" />
+                <img class="thumbnail" src="images/galleryArt/chamomileTea.png" alt="Cute Moe-girl representation of chamomile tea." />
             </figure>
             <figure class="gallery-item">
-                <img class="thumbnail" src="https://source.unsplash.com/featured/?afropunk" alt="afropunk style" />
+                <img class="thumbnail" src="images/galleryArt/Wink_Tier.png" alt="Cute, blue haired anime girl winking with a heart emoji." />
+            </figure>
+            <figure class="gallery-item">
+                <img class="thumbnail" src="images/galleryArt/peaceSignOC.png" alt="Cute, blue haired anime boy with peace sign and abstract shapes in background." />
+            </figure>
+            <figure class="gallery-item">
+                <img class="thumbnail" src="images/galleryArt/Alien_Adventurer.png" alt="POC in scifi clothes, beside a crashed spaceship wrapped in vines and an alien snake that's even larger." />
+            </figure>
+            <figure class="gallery-item">
+                <img class="thumbnail" src="images/galleryArt/craftEspressoLogo.gif" alt="Motion graphic of Craft Espresso logo." />
+            </figure>
+            <figure class="gallery-item">
+                <img class="thumbnail" src="images/galleryArt/Elephant_And_Bird.png" alt="Digital painting of bird and elephant." />
+            </figure>
+            <figure class="gallery-item">
+                <img class="thumbnail" src="images/galleryArt/Rose_Afro_2019.jpg" alt="A beautiful black woman with afro made of roses peering through a magnifying glass whose lens is reflecting another rose." />
+            </figure>
+            <figure class="gallery-item">
+                <img class="thumbnail" src="images/galleryArt/Fan_Art_Scavengers.png" alt="Fan Art! A bwwm interracial couple in alien world - my homage the short film scavengers by Joseph Bennet and Charles Huettner." />
+            </figure>
+            <figure class="gallery-item">
+                <img class="thumbnail" src="images/galleryArt/adventureTime.gif" alt="Fan Art! Animated Gif of characters from Adventure Time by Pendelton Ward." />
+            </figure>
+            <figure class="gallery-item">
+                <img class="thumbnail" src="images/galleryArt/bobRossQuotePSManipulation.png" alt="Talent is a pursued interest. Anything you're willing to practice, you can do. Bob Ross" />
             </figure>
         </div>
     </section>
-    <!--Skills Section? with icons of programs i use and/or cv skill list-->
+
+    <!--Skills-->
+    <section class="container" id="skills">
+        <div class="row">
+            <h2 class="col-sm-12">Skills</h2>
+        </div>
+        <div class="row">
+            <ul class="col-sm-6">
+                <li class="underline nobull">Visual Art</li>
+                <li>Procreate 5</li>
+                <li>Adobe Photoshop</li>
+                <li>Adobe Illustrator</li>
+                <li>Adobe After Effects*</li>
+                <li>Adobe Media Encoder*</li>
+            </ul>
+            <ul class="col-sm-6">
+                <li class="underline nobull">Coding</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap*</li>
+                <li>JavaScript*</li>
+                <li>Python*</li>
+            </ul>
+        </div>
+        <div class="row">
+            <p class="col-sm-12" id="beginner-center">*Beginner</p>
+        </div>
+        <!--Skills Section Place Holder with icons of programs i use and/or cv skill list?-->
+        <div class="row" id="skill-icons">
+            <div class="gallery">
+                <figure class="gallery-item"><img src="images/programIcons2020/procreate-512.png" /></figure>
+                <figure class="gallery-item"><img src="images/programIcons2020/photoshop-512.png" /></figure>
+                <figure class="gallery-item"><img src="images/programIcons2020/illustrator-512.png" /></figure>
+                <figure class="gallery-item"><img src="images/programIcons2020/afterEffects-512.png" /></figure>
+                <figure class="gallery-item"><img src="images/programIcons2020/mediaEncoder-512.png" /></figure>
+                <figure class="gallery-item"><img src="images/programIcons2020/html-5.png" /></figure>
+                <figure class="gallery-item"><img src="images/programIcons2020/css3.png" /></figure>
+                <figure class="gallery-item"><img src="images/programIcons2020/bootstrap.png" /></figure>
+                <figure class="gallery-item"><img src="images/programIcons2020/javascript.png" /></figure>
+                <figure class="gallery-item"><img src="images/programIcons2020/python.png" /></figure>
+            </div>
+        </div>
+    </section>
+
 
     <!--CONTACT Section-->
     <section class="jumbotron jumbotron-fluid" id="contact">
@@ -80,16 +154,37 @@
                 <h2 class="col-sm-12">Contact Me</h2>
             </div>
             <div class="row">
-                <p class="col-sm-12">I'm currently available for freelance! <br />Say hello: <strong>davidsethdesigns@gmail.com</strong></p>
+                <p class="col-sm-12">I'm currently available for freelance!<br /><strong>davidsethdesigns@gmail.com</strong></p>
             </div>
         </div>
     </section>
+
     </main>
+
     <!--FOOTER-->
     <footer class="container">
         <div class="row">
-            <p class="col-sm-12">&copy; 2020 David Seth Designs</p>
+            <p class="col-4">&copy; 2020 David Seth Designs</p>
+            <ul class="col-8">
+                <li id="behance-button" class="col-1">
+                    <a href="https://www.behance.net/davidsethdesigns" target="_blank">
+                        <img src="images/iconBehanceLightGreen.png" alt="behance logo" />
+                    </a>
+                </li>
+                <li class="col-1">
+                    <a href="https://github.com/plantbasedcode" target="_blank">
+                        <img src="images/iconGithubLightGreenAlt.png" alt="github logo" />
+                    </a>
+                </li>
+                <li class="col-1">
+                    <a href="https://www.linkedin.com/in/davidsethweitzel" target="_blank">
+                        <img src="images/iconLinkedIn.png" alt="LinkedIn logo" />
+                    </a>
+                </li>
+            </ul>
         </div>
     </footer>
+
 </body>
+
 </html>
