@@ -194,3 +194,7 @@ footer li img {
 .underline {
     text-decoration: underline;
 }
+
+.center {
+    text-align: center;
+}
