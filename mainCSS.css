@@ -68,6 +68,22 @@ header p {
     transform: translate(-50%, -50%); */
 }
 
+/*GALLERY 2.0 Start*/
+
+.media-scroller { 
+    display:grid;
+    gap: var(--size-3);
+    grid-auto-flow: column; /*columns not rows get it horizontal*/
+    grid-auto-columns: 33%; /*dont put at easily divisible into 100 eg 25% or 50% put it slightly off eg 21% or 36% to show that there is more content just beyong to scroll towards*/
+    overflow-x: auto; /*this gives you a horizontal scrolling bar in the media scroller instead of having to scroll the entire webpage horizontally which would no longer be the ribbon i want */
+
+  } 
+  
+  .media-element > img { /*this reduces the size or aspect ratio*/
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
 
 /*Gallery Start*/
 #gallery-id {
