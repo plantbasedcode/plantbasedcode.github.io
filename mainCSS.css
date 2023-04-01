@@ -74,7 +74,7 @@ header p {
     display:grid;
     gap: var(--size-3);
     grid-auto-flow: column; /*columns (not rows) get it horizontal*/
-    grid-auto-columns: 33%; /*dont put at easily divisible into 100 eg 25% or 50% put it slightly off eg 21% or 36% to show that there is more content just beyong to scroll towards*/
+    grid-auto-columns: 28%; /*dont put at easily divisible into 100 eg 25% or 50% put it slightly off eg 21% or 36% to show that there is more content just beyong to scroll towards*/
     overflow-x: auto; /*this gives you a horizontal scrolling bar in the media scroller section instead of having to scroll the entire webpage horizontally which would no longer be the ribbon i want */
 
   } 
@@ -109,6 +109,7 @@ header p {
 .gallery-item {
     /*border: .4rem solid #000;*/
     margin: 1.25rem;
+    
 }
 
 /*class selector for img tag inside figure*/
