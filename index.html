@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Link CSS style sheet-->
     <link rel="stylesheet" type="text/css" href="mainCSS.css">
-    <!--Link JS ??-->
+    <!--Link JS or just use script tags in body??-->
 </head>
 
 <body>
@@ -47,58 +47,66 @@
     <!-- GALLERY 2.0 HORIZONTAL SCROLL maybe just with class mods and scroll snap-->
     <section class="container">
         <div class="row" id="gallery-id">
-            <h2 class="col-sm-12">Daves Old Doodles (Art Gallery 2.0)</h2>
+            <h2 class="col-sm-12"><button onclick="myFunction()">Art Gallery 2.0</button> <!--external JS button--></h2>
         </div>
         
-        <div class="media-scroller with-overscroll snaps-inline snaps--individual"> <!-- I dont understand this class item https://codepen.io/kevinpowell/pen/ExbKBQa rewatch his tutorial https://www.youtube.com/watch?v=3yfswsnD2sw-->    
-            <div class="media-element">
-                <figure class="gallery-item"> <!--figure class gallery item css is preventing weird cropping and shows the whole image in a square overriding the 16:9 aspect ratio of media element-->
-                    <img class="thumbnail" src="images/galleryArt/Rock_Lee.png" alt="Fan Art! Rock Lee's face from Naruto in his drunken fist/drunken monkey martial arts pose." />
-                </figure>
-                <p class="title">Drunken Rock Lee (Fan Art)</p>
+
+        <div id="dropDownGallery">
+            <div class="media-scroller with-overscroll snaps-inline snaps--individual"> <!-- I dont understand this class item https://codepen.io/kevinpowell/pen/ExbKBQa rewatch his tutorial https://www.youtube.com/watch?v=3yfswsnD2sw-->    
+                <div class="media-element">
+                    <figure class="gallery-item"> <!--figure class gallery item css is preventing weird cropping and shows the whole image in a square overriding the 16:9 aspect ratio of media element-->
+                        <img class="thumbnail" src="images/galleryArt/Rock_Lee.png" alt="Fan Art! Rock Lee's face from Naruto in his drunken fist/drunken monkey martial arts pose." />
+                    </figure>
+                    <p class="title">Drunken Rock Lee (Fan Art)</p>
+                </div>
+                <div class="media-element">
+                    <figure class="gallery-item">
+                        <img class="thumbnail" src="images/galleryArt/May_4.png" alt="Fan Art! My redesign of Chewbacca the Wookie for May the 4th." />
+                    </figure>
+                    <p class="title">Redesign of Chewbacca (Fan Art)</p>
+                </div>
+                <div class="media-element">
+                    <figure class="gallery-item">
+                        <img class="thumbnail" src="images/galleryArt/fanArtMilesMorales.png" alt="Fan Art! Miles Morales in his Spidey outfit from Into the Spiderverse." />
+                    </figure>
+                    <p class="title">Miles Morales (Fan Art)</p>
+                </div>
+                <div class="media-element">
+                    <figure class="gallery-item">
+                        <img class="thumbnail" src="images/galleryArt/Rose_Afro_2019.jpg" alt="A beautiful black woman with afro made of roses peering through a magnifying glass whose lens is reflecting another rose." />
+                    </figure>
+                    <p class="title">Discovering Mysteries of Nature</p>
+                </div>
+                 <div class="media-element">
+                    <figure class="gallery-item">
+                        <img class="thumbnail" src="images/galleryArt/Alien_Adventurer.png" alt="POC in scifi clothes, beside a crashed spaceship wrapped in vines and an alien snake that's even larger." />
+                    </figure>
+                    <p class="title">Trade Negotiations</p>
+                </div>
+                <div class="media-element">
+                    <figure class="gallery-item">
+                        <img class="thumbnail" src="images/galleryArt/Elephant_And_Bird.png" alt="Digital painting of bird and elephant." />
+                    </figure>
+                    <p class="title">Painting from Documentaries - Animals being Bros</p>
+                </div>
+                <div>
+                    <figure class="gallery-item">
+                        <img class="thumbnail" src="images/galleryArt/Midnight_Gospel.png" alt="Fan Art! Clancy from Midnight Gospel entering the simulator as it malfunctions." />
+                    </figure>
+                    <p class="title">Clancy Entering the Simulator - Midnight Gospel (Fan Art)</p>
+                </div>
             </div>
-            <div class="media-element">
-                <figure class="gallery-item">
-                    <img class="thumbnail" src="images/galleryArt/May_4.png" alt="Fan Art! My redesign of Chewbacca the Wookie for May the 4th." />
-                </figure>
-                <p class="title">Redesign of Chewbacca (Fan Art)</p>
-            </div>
-            <div class="media-element">
-                <figure class="gallery-item">
-                    <img class="thumbnail" src="images/galleryArt/fanArtMilesMorales.png" alt="Fan Art! Miles Morales in his Spidey outfit from Into the Spiderverse." />
-                </figure>
-                <p class="title">Miles Morales (Fan Art)</p>
-            </div>
-            <div class="media-element">
-                <figure class="gallery-item">
-                    <img class="thumbnail" src="images/galleryArt/Rose_Afro_2019.jpg" alt="A beautiful black woman with afro made of roses peering through a magnifying glass whose lens is reflecting another rose." />
-                </figure>
-                <p class="title">Discovering Mysteries of Nature</p>
-            </div>
-             <div class="media-element">
-                <figure class="gallery-item">
-                    <img class="thumbnail" src="images/galleryArt/Alien_Adventurer.png" alt="POC in scifi clothes, beside a crashed spaceship wrapped in vines and an alien snake that's even larger." />
-                </figure>
-                <p class="title">Trade Negotiations</p>
-            </div>
-            <div class="media-element">
-                <figure class="gallery-item">
-                    <img class="thumbnail" src="images/galleryArt/Elephant_And_Bird.png" alt="Digital painting of bird and elephant." />
-                </figure>
-                <p class="title">Painting from Documentaries - Animals being Bros</p>
-            </div>
-            <div>
-                <figure class="gallery-item">
-                    <img class="thumbnail" src="images/galleryArt/Midnight_Gospel.png" alt="Fan Art! Clancy from Midnight Gospel entering the simulator as it malfunctions." />
-                </figure>
-                <p class="title">Clancy Entering the Simulator - Midnight Gospel (Fan Art)</p>
-            </div>
-        </div>
+        </div> 
+        
+        <script src="mainJS.js"></script> <!--calling external js-->
+        
+       
         
     </section>
 
     
     <!-- GALLERY -->
+    <!--
     <section class="container">
         <div class="row" id="gallery-id">
             <h2 class="col-sm-12">Art Gallery</h2>
@@ -138,6 +146,7 @@
             
         </div>
     </section>
+    END OF GALLERY-->
 
     <!--Skills-->
     <section class="container" id="skills">

@@ -70,6 +70,7 @@ header p {
 
 /*GALLERY 2.0 Start*/
 
+
 .media-scroller { 
     display:grid;
     gap: var(--size-3);
