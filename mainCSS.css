@@ -1,5 +1,5 @@
 ﻿/*Color Scheme 01: #436a3d (Dark Green), #698365 (Light Green),  #836569 (Rose Brown?), #f5f5f5 (WhiteSmoke)*/
-/*Color Scheme 02: #436a3d dark green #698365 light green #4A5C47 shade darker of light green #6A3FEB purple #9BC295 super light green*/
+/*Color Scheme 02: #436a3d dark green #698365 light green #4A5C47 shade darker of light green #6A3FEB purple #9BC295 super light green, white smoke*/
 /*alternative bg colors for darkmode #1c1c1c */
 body {
     font-family: 'Trebuchet MS', 'Helvetica', sans-serif;
@@ -85,12 +85,15 @@ header p {
 
   } 
   
-  .media-element > img { /*VERY IMPORTANT this alters the size or aspect ratio, it auto crops the image to fit, this looks like cool media, but doesnt play well with my sqaure or portait illustrations so its currently overwridden by figure class gallery item css*/
+.media-element > img { /*VERY IMPORTANT this alters the size or aspect ratio, it auto crops the image to fit, this looks like cool media, but doesnt play well with my sqaure or portait illustrations so its currently overwridden by figure class gallery item css*/
     inline-size: 100%;
     aspect-ratio: 16 / 9;
     object-fit: cover;
   }
 
+.title {
+    color: #698365;
+}
 /*GALLERY 2.0 END*/
 
 /*Gallery Start /2.0 buidling off of somewhat*/
