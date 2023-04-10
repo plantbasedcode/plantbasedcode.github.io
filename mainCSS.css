@@ -1,9 +1,10 @@
 ﻿/*Color Scheme 01: #436a3d (Dark Green), #698365 (Light Green),  #836569 (Rose Brown?), #f5f5f5 (WhiteSmoke)*/
-
+/*Color Scheme 02: #436a3d dark green #698365 light green #4A5C47 shade darker of light green #6A3FEB purple #9BC295 super light green*/
+/*alternative bg colors for darkmode #1c1c1c */
 body {
     font-family: 'Trebuchet MS', 'Helvetica', sans-serif;
     margin: 0;
-    background-color: #f5f5f5;
+    background-color: #1c1c1c;
 }
 
 header {
@@ -90,13 +91,17 @@ header p {
     object-fit: cover;
   }
 
-/*Gallery Start*/
+/*GALLERY 2.0 END*/
+
+/*Gallery Start /2.0 buidling off of somewhat*/
 #gallery-id {
     color: #436a3d;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 #gallery-id h2 {
+    color: #436a3d;
     text-align: center;
     font-size: 4rem;
 }
@@ -128,9 +133,6 @@ header p {
 
 /*SKILLS*/
 #skills {
-    background-color: whitesmoke;
-    color: #698365;
-    font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -250,8 +252,12 @@ footer li img {
     font-size: smaller;
 }
 
-#x-smaller-text {
+#x-small-text {
     font-size: x-small;
+}
+
+#xx-small-text{
+    font-size: xx-small;
 }
 
 /*github icon was made in 512x512px square canvas so no need to warp*/
