@@ -41,7 +41,7 @@
                 <h2 class="col-sm-12">David Seth Designs</h2>
             </div>
             <div class="row">
-                <p class="col-sm-12">Well hello there - you found Dave! I love illustration and animation projects, and I enjoy the puzzles presented by front end web development. Welcome to my virtual space. </p>
+                <p class="col-sm-12">Well hello there - you found Dave! I love illustration and animation projects, and I enjoy the puzzles presented by front end web development. <br />Welcome to my virtual space. </p>
             </div>
         </div>
     </section>
@@ -72,14 +72,16 @@
 
     
     <!-- GALLERY 2.0 HORIZONTAL SCROLL maybe just with class mods and scroll snap-->
-    <section class="container">
-        <div class="row" id="gallery-id">
+    <section class="container" id="gallery-id">
+        <div class="row">
             <h2 class="col-12">Art Gallery 2.0</h2>
-        </div>
+        </div> <!--Section Title row-->
 
-        <div class="row" id="gallery-id">
-            <h2 class="col-sm-12"><button onclick="myFunction()">FOLDER BUTTON STANDIN</button> <!--external JS button--></h2>
-        </div>
+        <div class="row center">
+            <div class="col-4 start"></div>
+            <button class="col-4 center" id="galleryButton" onclick="myFunction()">Illustration BUTTON STANDIN</button> <!--external JS button-->
+            <div class="col-4 end"></div>
+        </div> <!--BUTTON row-->
         
 
         <div id="dropDownGallery">
@@ -127,7 +129,7 @@
                     <p class="title">Clancy Entering the Simulator - Midnight Gospel (Fan Art)</p>
                 </div>
             </div>
-        </div>     
+        </div> <!-- Media scroller row aka drop down menu content-->
         
         
     </section>
@@ -174,8 +176,8 @@
             
         </div>
     </section>
-    END OF GALLERY-->
-
+    -->
+    <!--END OF GALLERY-->
     
 
 
@@ -186,8 +188,12 @@
                 <h2 class="col-sm-12">Contact Me</h2>
             </div>
             <div class="row">
-                <p class="col-sm-12">Feel free to reach out regarding projects!<br /><strong>davidsethdesigns@gmail.com</strong></p>
-            </div>
+                <p class="col-sm-12">Please direct inquiries to <strong>davidsethdesigns@gmail.com</strong></p>
+            </div>    
+            
+        </div>
+        <div class="container">
+            
         </div>
     </section>
 
@@ -216,13 +222,13 @@
         </div> <!--icons row-->
         
         <div class="row">
-            <p class="col-sm-12 center" id="x-small-text">Both background stock photos are courtesy of Japan-based photographer&#160;<a href="https://unsplash.com/@sorasagano" target="_blank"> Soras Sogano&#33;</a></p>
+            <p class="col-sm-12 center" id="small-text">Lotus blossom stock photo courtesy of Japan-based photographer&#160;<a href="https://unsplash.com/@sorasagano" target="_blank"> Soras Sogano&#33;</a></p>
         </div> <!--credit citations row-->
 
         <div class="row">
             <p class="col-4 start" id="x-small-text">&copy;&#160;2011&#160;&#45;&#160;2023 David Seth Designs</p>
-            <p class="col-4 center" id="x-small-text">Version 1.3</p>
-            <p class="col-4 end"></p>
+            <p class="col-4 center" id="small-text">Version 1.3</p>
+            <p class="col-4 end" id="x-small-text"></p>
         </div> <!--version and copyright-->
 
     </footer>

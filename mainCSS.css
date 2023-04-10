@@ -49,8 +49,8 @@ header p {
 #welcome-message {
     display: flex;
     background-image:
-    radial-gradient(transparent, rgb(0, 0, 0) 150%),
-    url(https://images.unsplash.com/photo-1466354424719-343280fe118b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80); 
+    radial-gradient(transparent, rgb(0, 0, 0) 100%),
+    url(images/galleryArt/Elephant_And_Bird.png); 
     background-size: cover;
     margin-top: 2rem;
     color: whitesmoke;
@@ -59,7 +59,8 @@ header p {
     text-align: center;
 }
 
-/* creddit to https://unsplash.com/@sorasagano for the welcome message image*/
+/* creddit to https://unsplash.com/@sorasagano for stock photos used as placeholders*/
+/*maybe draw this and link him as photo ref source instead that could be cool https://images.unsplash.com/photo-1466354424719-343280fe118b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80*/
 
 #welcome-message h2 {
     margin-bottom: 2.5rem;
@@ -91,16 +92,28 @@ header p {
     object-fit: cover;
   }
 
-.title {
+
+#galleryButton { /*BUTTON STYLING*/
+    color: whitesmoke;
+    background-image: url(images/galleryArt/fanArtMilesMorales.png);
+    background-size: cover;
+    margin-top: 2rem;
+}
+
+.title { /*aka captions for gallery photos*/
     color: #698365;
+}
+
+#dropDownGallery {
+    color: #436a3d;
 }
 /*GALLERY 2.0 END*/
 
 /*Gallery Start /2.0 buidling off of somewhat*/
 #gallery-id {
     color: #436a3d;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
 }
 
 #gallery-id h2 {
@@ -131,6 +144,7 @@ header p {
    width: 18rem;
    object-fit: cover;
 }
+
 
 /*End Gallery*/
 
@@ -172,7 +186,7 @@ header p {
 /*CONTACT*/
 #contact {
     background-image:
-    radial-gradient(transparent, rgb(0, 0, 0) 150%), 
+    radial-gradient(transparent, rgb(0, 0, 0) 120%), 
     url(https://images.unsplash.com/photo-1625980953551-50502b3b8b2f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80);
     background-size: cover;
     color: whitesmoke;
@@ -182,12 +196,17 @@ header p {
     
 }
 
-/*credit to https://unsplash.com/@sorasagano */
+/*credit to https://unsplash.com/@sorasagano stock photos*/
 
 #contact h2 {
     font-size: 4rem;
     font-weight: 200;
     text-shadow: 0.2rem 0.2rem 0.2rem #000;
+    text-align: top;
+}
+
+#contact .col-12 {
+    justify-content: center;
 }
 
 /*FOOTER*/
