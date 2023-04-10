@@ -47,7 +47,9 @@ header p {
 /*Welcome Message*/
 #welcome-message {
     display: flex;
-    background-image: url(https://images.unsplash.com/photo-1466354424719-343280fe118b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+    background-image:
+    radial-gradient(transparent, rgb(0, 0, 0) 150%),
+    url(https://images.unsplash.com/photo-1466354424719-343280fe118b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80); 
     background-size: cover;
     margin-top: 2rem;
     color: whitesmoke;
@@ -55,6 +57,8 @@ header p {
     text-shadow: 0.1rem 0.1rem 0.1rem #000000;
     text-align: center;
 }
+
+/* creddit to https://unsplash.com/@sorasagano for the welcome message image*/
 
 #welcome-message h2 {
     margin-bottom: 2.5rem;
@@ -162,13 +166,18 @@ header p {
 
 /*CONTACT*/
 #contact {
-    background-image: url(https://source.unsplash.com/3jKqzhpiGuk);
+    background-image:
+    radial-gradient(transparent, rgb(0, 0, 0) 150%), 
+    url(https://images.unsplash.com/photo-1625980953551-50502b3b8b2f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80);
     background-size: cover;
     color: whitesmoke;
     text-shadow: 0.1rem 0.1rem 0.1rem #000000;
     font-size: 2rem;
     text-align: center;
+    
 }
+
+/*credit to https://unsplash.com/@sorasagano */
 
 #contact h2 {
     font-size: 4rem;
@@ -183,14 +192,47 @@ footer {
     margin-bottom: 1rem;
 }
 
+footer .col-12 {
+    display: flex;
+    justify-content: center;
+}
+
 footer .col-8 {
     display: flex;
     justify-content: flex-end;
 }
 
+
 footer .col-1 {
     margin-left: 2rem;
 }
+
+footer a:link {
+    color: #698365;
+    background-color: transparent;
+    text-decoration: none;
+ }
+  
+footer  a:visited {
+    color: #4A5C47;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+footer  a:hover {
+    color: #6A3FEB;
+    background-color: transparent;
+    text-decoration: #6A3FEB wavy underline;
+    text-underline-position: under;
+  }
+  
+footer  a:active {
+    color: #9BC295;
+    background-color: transparent;
+    text-decoration: #9BC295 wavy underline;
+  }
+/*wavy underline and underline text decoration was not without listing footer for each a but now is working maaaybe*/
+
 
 /*removes bullet points*/
 footer ul {
@@ -201,6 +243,15 @@ footer ul {
 footer li img {
     width: 4rem;
     height: 4rem;
+}
+/*IDs for easily altering text size*/
+
+#smaller-text {
+    font-size: smaller;
+}
+
+#x-smaller-text {
+    font-size: x-small;
 }
 
 /*github icon was made in 512x512px square canvas so no need to warp*/
