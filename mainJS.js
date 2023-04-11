@@ -1,7 +1,7 @@
 ﻿window.onload = function(){
     document.getElementById("dropDownGallery").style.display='none';
   };
-//this hides the scroller on load
+//this hides the media scroller on load
 
 function myFunction() {
     var x = document.getElementById("dropDownGallery");
@@ -11,4 +11,28 @@ function myFunction() {
       x.style.display = "none";
     }
   }
-  // actual button js from W3
+// creates a dropdown menu button in js
+
+
+// BACK TO TOP button 
+let mybutton = document.getElementById("topButton");
+
+// When the user scrolls down 20px from the top of the document, show the button edited to 50 but not sure thats working
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// Click on the button and auto scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; //safari verified
+  document.documentElement.scrollTop = 0; //supposedly chrome firefoxe ie opera
+}
+// END of BACK TO TOP
+
+
