@@ -1,5 +1,5 @@
 ﻿/*Color Scheme 01: #436a3d (Dark Green), #698365 (Light Green),  #836569 (Rose Brown?), #f5f5f5 (WhiteSmoke)*/
-/*Color Scheme 02: #436a3d dark green #698365 light green #4A5C47 shade darker of light green #6A3FEB purple #9BC295 super light green, white smoke*/
+/*Color Scheme 02: #436a3d dark green #32502e dark green a shade or so darker #698365 light green #4A5C47 shade darker of light green #6A3FEB purple #9BC295 super light green, white smoke*/
 /*alternative bg colors for darkmode #1c1c1c */
 body {
     font-family: 'Trebuchet MS', 'Helvetica', sans-serif;
@@ -26,6 +26,16 @@ header h1 {
     margin: 0;
 }
 
+header a {
+    color: #436a3d;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #32502e;
+    text-decoration: none;
+}
+
 header nav {
     display: flex;
     justify-content: flex-end;
@@ -37,7 +47,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #836569;
+    color: #4A5C47;
     text-decoration: none;
 }
 
@@ -104,12 +114,11 @@ header p {
     color: #698365;
 }
 
+/* drop down css doesnt work needed to use above .title
 #dropDownGallery {
     color: #436a3d;
-}
-/*GALLERY 2.0 END*/
+} */
 
-/*Gallery Start /2.0 buidling off of somewhat*/
 #gallery-id {
     color: #436a3d;
     margin-bottom: 4rem;
