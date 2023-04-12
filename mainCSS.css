@@ -22,17 +22,17 @@ footer .row {
 
 header h1 {
     font-weight: 400;
-    color: #436a3d;
+    color: #4A5C47;
     margin: 0;
 }
 
 header a {
-    color: #436a3d;
+    color: #4A5C47;
     text-decoration: none;
 }
 
 header a:hover {
-    color: #32502e;
+    color: #41513e;
     text-decoration: none;
 }
 
@@ -60,7 +60,7 @@ header p {
 
 /*return to top button*/
 #topButton {
-    display: none;  /*display: block shows up always trying to get js to fix this to use none*/
+    display: none;  
     position: fixed;
     bottom: 20px;
     right: 30px;
@@ -72,7 +72,8 @@ header p {
     color: whitesmoke;
     cursor: pointer;
     padding: 15px;
-    border-radius: 4px;
+    border-radius: 50%; /*this will start to round the button starting at 2 4 8 12 it gets softer and at 50% we have an oval*/
+
   }
   
 #topButton:hover {
@@ -83,7 +84,7 @@ header p {
 #welcome-message {
     display: flex;
     background-image:
-    radial-gradient(transparent, rgb(0, 0, 0) 100%),
+    radial-gradient(transparent, rgb(0, 0, 0) 100%),  /*this is a vignette maker excellent for dark mode application*/
     url(images/galleryArt/Elephant_And_Bird.png); 
     background-size: cover;
     margin-top: 2rem;
@@ -131,6 +132,7 @@ header p {
     color: whitesmoke;
     background-image: url(images/galleryArt/fanArtMilesMorales.png);
     background-size: cover;
+    border: none;
     margin-top: 2rem;
 }
 
@@ -138,19 +140,18 @@ header p {
     color: #698365;
 }
 
-/* drop down css doesnt work needed to use above .title
+/* drop down css work hiccup needed to use above .title
 #dropDownGallery {
     color: #436a3d;
 } */
 
 #gallery-id {
-    color: #436a3d;
     margin-bottom: 4rem;
     margin-top: 1rem;
 }
 
 #gallery-id h2 {
-    color: #436a3d;
+    color: #4A5C47;
     text-align: center;
     font-size: 4rem;
 }
@@ -190,7 +191,7 @@ header p {
 #skills h2 {
     font-size: 4rem;
     font-weight: 200;
-    color: #436a3d;
+    color: #4A5C47;
     text-align: center;
     /*text-shadow: 0.2rem 0.2rem 0.2rem #000;*/
 }
@@ -265,42 +266,56 @@ footer .col-1 {
 }
 
 footer a:link {
-    color: #698365;
+    color: #4A5C47;
     background-color: transparent;
-    text-decoration: none;
+    text-decoration: #4A5C47;
  }
   
 footer  a:visited {
     color: #4A5C47;
     background-color: transparent;
-    text-decoration: none;
+    text-decoration:  #4A5C47;
   }
   
 footer  a:hover {
     color: #6A3FEB;
     background-color: transparent;
-    text-decoration: #6A3FEB wavy underline;
-    text-underline-position: under;
+    text-decoration: #6A3FEB
   }
   
 footer  a:active {
     color: #9BC295;
     background-color: transparent;
-    text-decoration: #9BC295 wavy underline;
+    text-decoration: #9BC295;
   }
-/*wavy underline and underline text decoration was not without listing footer for each a but now is working maaaybe*/
-
 
 /*removes bullet points*/
 footer ul {
     list-style: none;
 } 
 
-/*behance icon was made in 1200x904px canvas so 4:3 ratio keeps it from being warped*/
+
 footer li img {
     width: 4rem;
     height: 4rem;
+    border-radius: 50%;
 }
+
+footer img:hover {
+    box-shadow: 0px 0px 5px 2px #6A3FEB; /*adds a highlight shadow behind the item for UI horizontal offset follows border INPUTS are vertical offset, blur distance, actual?*/
+}
+
+/*github and linkedin icon made in 512x512px square canvas so no need to warp*/
+/*behance icon was made in 1200x904px canvas so 4:3 ratio keeps it from being warped edit later*/
+#behance-button {
+    width: 4rem;
+    height: 3rem;
+}
+
+#citation a:hover {
+    box-shadow: 0px 0px 5px 2px #6A3FEB; 
+}
+
 /*IDs for easily altering text size*/
 
 #smaller-text {
@@ -313,12 +328,6 @@ footer li img {
 
 #xx-small-text{
     font-size: xx-small;
-}
-
-/*github icon was made in 512x512px square canvas so no need to warp*/
-#behance-button {
-    width: 4rem;
-    height: 3rem;
 }
 
 .underline {
