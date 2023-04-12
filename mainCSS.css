@@ -68,7 +68,7 @@ header p {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #3d6a64;
+    background-color: #2e504b;
     color: whitesmoke;
     cursor: pointer;
     padding: 15px;
@@ -77,7 +77,7 @@ header p {
   }
   
 #topButton:hover {
-    background-color: #2e504b;
+    background-color: #3d6a64;
   }
 
 /*Welcome Message*/
@@ -280,13 +280,13 @@ footer  a:visited {
 footer  a:hover {
     color: #6A3FEB;
     background-color: transparent;
-    text-decoration: #6A3FEB
+    text-decoration: wavy underline #6A3FEB
   }
   
 footer  a:active {
-    color: #9BC295;
+    color: #6A3FEB;
     background-color: transparent;
-    text-decoration: #9BC295;
+    text-decoration: wavy underline #6A3FEB;
   }
 
 /*removes bullet points*/
@@ -312,9 +312,7 @@ footer img:hover {
     height: 3rem;
 }
 
-#citation a:hover {
-    box-shadow: 0px 0px 5px 2px #6A3FEB; 
-}
+
 
 /*IDs for easily altering text size*/
 
