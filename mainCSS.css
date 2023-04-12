@@ -26,15 +26,6 @@ header h1 {
     margin: 0;
 }
 
-header a {
-    color: #4A5C47;
-    text-decoration: none;
-}
-
-header a:hover {
-    color: #41513e;
-    text-decoration: none;
-}
 
 header nav {
     display: flex;
@@ -68,7 +59,7 @@ header p {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #2e504b;
+    background-color: rgba(105,131,101); /*tried transparency with alpha but it goes white*/
     color: whitesmoke;
     cursor: pointer;
     padding: 15px;
@@ -77,7 +68,7 @@ header p {
   }
   
 #topButton:hover {
-    background-color: #3d6a64;
+    background-color: #4A5C47;
   }
 
 /*Welcome Message*/
