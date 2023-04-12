@@ -305,14 +305,6 @@ footer img:hover {
     box-shadow: 0px 0px 5px 2px #6A3FEB; /*adds a highlight shadow behind the item for UI horizontal offset follows border INPUTS are vertical offset, blur distance, actual?*/
 }
 
-/*github and linkedin icon made in 512x512px square canvas so no need to warp*/
-/*behance icon was made in 1200x904px canvas so 4:3 ratio keeps it from being warped edit later*/
-#behance-button {
-    width: 4rem;
-    height: 3rem;
-}
-
-
 
 /*IDs for easily altering text size*/
 
