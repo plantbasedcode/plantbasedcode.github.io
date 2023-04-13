@@ -1,9 +1,14 @@
-﻿window.onload = function(){
+﻿
+//this hides the media scroller on load
+window.onload = function(){
     document.getElementById("dropDownGallery").style.display='none';
   };
-//this hides the media scroller on load
 
-function myFunction() {
+
+
+// creates a dropdown menu button in JS
+
+function showHideFunction() {
     var x = document.getElementById("dropDownGallery");
     if (x.style.display === "none") {
       x.style.display = "block";
@@ -11,13 +16,13 @@ function myFunction() {
       x.style.display = "none";
     }
   }
-// creates a dropdown menu button in js
+
 
 
 // BACK TO TOP button 
 let mybutton = document.getElementById("topButton");
 
-// When the user scrolls down 20px from the top of the document, show the button edited to 50 but not sure thats working
+//contd When the user scrolls down 20px from the top of the document, show the button edited to 50 but not sure thats working
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -28,11 +33,11 @@ function scrollFunction() {
   }
 }
 
-// Click on the button and auto scroll to the top of the document
+//contd Click on the button and auto scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0; //safari verified
   document.documentElement.scrollTop = 0; //supposedly chrome firefoxe ie opera
 }
-// END of BACK TO TOP
+// END of BACK TO TOP button
 
 

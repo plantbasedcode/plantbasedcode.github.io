@@ -50,7 +50,7 @@
                 
             </div>
             <div class="row">
-                <p class="col-sm-12">I have a passion for visual art&#46; My current focus is on illustration and animation projects, but I also enjoy the puzzles presented by front end web development. <br />Welcome to my virtual space. </p>
+                <p class="col-sm-12">I have a passion for visual art&#46; My current focus is on illustration and animation projects&#44; but I also enjoy the puzzles presented by front end web development and graphic design&#46; <br /><br />Welcome to my virtual space. </p>
             </div>
         </div>
     </section>
@@ -63,7 +63,21 @@
         
         <!--Skills Section Place Holder with icons of programs i use and/or cv skill list?-->
         <div class="row" id="skill-icons">
-            <div class="gallery">
+            
+            <img src="images/programIcons2020/procreate-512.png" />
+            <img src="images/programIcons2020/photoshop-512.png" />
+            <img src="images/programIcons2020/illustrator-512.png"/>
+            <img src="images/programIcons2020/afterEffects-512.png" />
+            <img src="images/programIcons2020/mediaEncoder-512.png" />
+            <img src="images/programIcons2020/clipstudioicon.png" />
+            <img src="images/programIcons2020/html-5.png" />
+            <img src="images/programIcons2020/css3.png" />
+            <img src="images/programIcons2020/bootstrap512.png" />
+            <img src="images/programIcons2020/javascript.png" />
+            
+
+            <!--
+            <div>
                 <figure class="gallery-item"><img src="images/programIcons2020/procreate-512.png" /></figure>
                 <figure class="gallery-item"><img src="images/programIcons2020/photoshop-512.png" /></figure>
                 <figure class="gallery-item"><img src="images/programIcons2020/illustrator-512.png" /></figure>
@@ -75,6 +89,7 @@
                 <figure class="gallery-item"><img src="images/programIcons2020/bootstrap512.png" /></figure>
                 <figure class="gallery-item"><img src="images/programIcons2020/javascript.png" /></figure>
             </div>
+            -->
         </div>
     </section>
 
@@ -85,11 +100,11 @@
             <h2 class="col-12">Art Gallery 2.0</h2>
         </div> <!--Section Title row-->
 
-        <div class="row center">
+        <div class="row center"> <!--BUTTON row-->
             <div class="col-4 start"></div>
-            <button class="col-4 center" id="galleryButton" onclick="myFunction()">Illustration BUTTON STANDIN</button> <!--external JS button-->
+            <button class="col-4 center" id="galleryButton" onclick="showHideFunction()">Illustration BUTTON STANDIN</button> <!--external JS button-->
             <div class="col-4 end"></div>
-        </div> <!--BUTTON row-->
+        </div> 
         
 
         <div id="dropDownGallery">
@@ -98,43 +113,43 @@
                     <figure class="gallery-item"> <!--figure class gallery item css is preventing weird cropping and shows the whole image in a square overriding the 16:9 aspect ratio of media element-->
                         <img class="thumbnail" loading="lazy" src="images/galleryArt/Rock_Lee.png" alt="Fan Art! Rock Lee's face from Naruto in his drunken fist/drunken monkey martial arts pose." />
                     </figure>
-                    <p class="title">Drunken Rock Lee &#40;Fan Art&#41;</p>
+                    <p id="media-element-caption">Drunken Rock Lee &#40;Fan Art&#41;</p>
                 </div>
                 <div class="media-element">
                     <figure class="gallery-item">
                         <img class="thumbnail" loading="lazy" src="images/galleryArt/May_4.png" alt="Fan Art! My redesign of Chewbacca the Wookie for May the 4th." />
                     </figure>
-                    <p class="title">Redesign of Chewbacca &#40;Fan Art&#41;</p>
+                    <p id="media-element-caption">Redesign of Chewbacca &#40;Fan Art&#41;</p>
                 </div>
                 <div class="media-element">
                     <figure class="gallery-item">
                         <img class="thumbnail" loading="lazy" src="images/galleryArt/fanArtMilesMorales.png" alt="Fan Art! Miles Morales in his Spidey outfit from Into the Spiderverse." />
                     </figure>
-                    <p class="title">Miles Morales &#40;Fan Art&#41;</p>
+                    <p id="media-element-caption">Miles Morales &#40;Fan Art&#41;</p>
                 </div>
                 <div class="media-element">
                     <figure class="gallery-item">
                         <img class="thumbnail" loading="lazy" src="images/galleryArt/Rose_Afro_2019.jpg" alt="A beautiful black woman with afro made of roses peering through a magnifying glass whose lens is reflecting another rose." />
                     </figure>
-                    <p class="title">Discovering Mysteries of Nature</p>
+                    <p id="media-element-caption">Discovering Mysteries of Nature</p>
                 </div>
                  <div class="media-element">
                     <figure class="gallery-item">
                         <img class="thumbnail" loading="lazy" src="images/galleryArt/Alien_Adventurer.png" alt="POC in scifi clothes, beside a crashed spaceship wrapped in vines and an alien snake that's even larger." />
                     </figure>
-                    <p class="title">Trade Negotiations</p>
+                    <p id="media-element-caption">Trade Negotiations</p>
                 </div>
                 <div class="media-element">
                     <figure class="gallery-item">
                         <img class="thumbnail" loading="lazy" src="images/galleryArt/Elephant_And_Bird.png" alt="Digital painting of bird and elephant." />
                     </figure>
-                    <p class="title">Painting from Documentaries - Animals being Bros</p>
+                    <p id="media-element-caption">Painting from Documentaries - Animals being Bros</p>
                 </div>
                 <div class="media-element">
                     <figure class="gallery-item">
                         <img class="thumbnail" loading="lazy" src="images/galleryArt/Midnight_Gospel.png" alt="Fan Art! Clancy from Midnight Gospel entering the simulator as it malfunctions." />
                     </figure>
-                    <p class="title">Clancy Entering the Simulator - Midnight Gospel &#40;Fan Art&#41;</p>
+                    <p id="media-element-caption">Clancy Entering the Simulator - Midnight Gospel &#40;Fan Art&#41;</p>
                 </div>
             </div>
         </div> <!-- Media scroller row aka drop down menu content-->

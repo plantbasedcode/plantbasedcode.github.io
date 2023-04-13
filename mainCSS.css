@@ -1,21 +1,23 @@
 ﻿/*Color Scheme 01: #436a3d (Dark Green), #698365 (Light Green),  #836569 (Rose Brown?), #f5f5f5 (WhiteSmoke)*/
 /*Color Scheme 02: #436a3d dark green #32502e dark green a shade or so darker #3d6a64 analagous blue to dark green #2e504b shade darker of analagous blue #698365 light green #4A5C47 shade darker of light green #6A3FEB purple #9BC295 super light green, white smoke*/
 /*alternative bg colors for darkmode #1c1c1c */
+
 body {
     font-family: 'Trebuchet MS', 'Helvetica', sans-serif;
     margin: 0;
-    background-color: #1c1c1c;
+    background-color: #1c1c1c; /*from scratch dark mode for now*/
 }
 
 header {
     padding: 0;
-    margin: 1.25rem 0;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
     font-size: 2rem;
 }
 
-/*Flex made this possible - learn more later*/
+
 header .row,
-footer .row {
+footer .row { /*Flex made this possible - learn more later*/
     display: flex;
     align-items: center;
 }
@@ -24,6 +26,7 @@ header h1 {
     font-weight: 400;
     color: #4A5C47;
     margin: 0;
+    text-align: center;
 }
 
 
@@ -31,25 +34,26 @@ header nav {
     display: flex;
     justify-content: flex-end;
     color: #698365;
+    text-align: center;
 }
 
-nav a {
+header nav a {
     color: #698365;
+    
 }
 
-nav a:hover {
+header nav a:hover {
     color: #4A5C47;
     text-decoration: none;
 }
 
 header p {
-    padding: 0;
-    margin:0 1rem;
+    margin: 1rem; /*spacing between nav a links - padding is for text inside element margin for seperating different divs or larger pieces*/
 }
 
 /*END HEADER*/
 
-/*return to top button*/
+/*return to top button styling*/
 #topButton {
     display: none;  
     position: fixed;
@@ -60,7 +64,7 @@ header p {
     border: none;
     outline: none;
     background-color: rgba(105,131,101, .5); /*RGB ONLY 4th value i transparency 0 is full transparent 1 is opaque*/
-    color: whitesmoke;
+    color: rgba(245, 245, 245, .5); /*whitesmoke as rgb*/
     cursor: pointer;
     padding: 15px;
     border-radius: 50%; /*this will start to round the button starting at 2 4 8 12 it gets softer and at 50% we have an oval*/
@@ -69,6 +73,8 @@ header p {
   
 #topButton:hover {
     background-color: rgba(105,131,101, .7);
+    text-shadow: #FC0 1px 0 10px; /*x offset y offset blur color*/
+    box-shadow: #FC0 0 0 10px;
   }
 
 /*Welcome Message*/
@@ -78,18 +84,16 @@ header p {
     radial-gradient(transparent, rgb(0, 0, 0) 100%),  /*this is a vignette maker excellent for dark mode application*/
     url(images/galleryArt/Elephant_And_Bird.png); 
     background-size: cover;
-    margin-top: 2rem;
     color: whitesmoke;
     font-size: 2rem;
     text-shadow: 0.1rem 0.1rem 0.1rem #000000;
     text-align: center;
 }
 
-/* creddit to https://unsplash.com/@sorasagano for stock photos used as placeholders*/
-/*maybe draw this and link him as photo ref source instead that could be cool https://images.unsplash.com/photo-1466354424719-343280fe118b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80*/
+/*maybe draw this and link him as photo ref source instead that could be cool https://images.unsplash.com/photo-1466354424719-343280fe118b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80 */
 
 #welcome-message h2 {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
     font-size: 4rem;
     font-weight: 200;
     text-shadow: 0.2rem 0.2rem 0.2rem #000;
@@ -100,78 +104,9 @@ header p {
     transform: translate(-50%, -50%); */
 }
 
-/*GALLERY 2.0 Start*/
+/*END WELCOME MSG*/
 
 
-.media-scroller { 
-    display:grid;
-    gap: var(--size-3);
-    grid-auto-flow: column; /*columns (not rows) get it horizontal*/
-    grid-auto-columns: 28%; /*dont put at easily divisible into 100 eg 25% or 50% put it slightly off eg 21% or 36% to show that there is more content just beyong to scroll towards*/
-    overflow-x: auto; /*this gives you a horizontal scrolling bar in the media scroller section instead of having to scroll the entire webpage horizontally which would no longer be the ribbon i want */
-
-  } 
-  
-.media-element > img { /*VERY IMPORTANT this alters the size or aspect ratio, it auto crops the image to fit, this looks like cool media, but doesnt play well with my sqaure or portait illustrations so its currently overwridden by figure class gallery item css*/
-    inline-size: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-  }
-
-
-#galleryButton { /*BUTTON STYLING*/
-    color: whitesmoke;
-    background-image: url(images/galleryArt/fanArtMilesMorales.png);
-    background-size: cover;
-    border: none;
-    margin-top: 2rem;
-}
-
-.title { /*aka captions for gallery photos*/
-    color: #698365;
-}
-
-/* drop down css work hiccup needed to use above .title
-#dropDownGallery {
-    color: #436a3d;
-} */
-
-#gallery-id {
-    margin-bottom: 4rem;
-    margin-top: 1rem;
-}
-
-#gallery-id h2 {
-    color: #4A5C47;
-    text-align: center;
-    font-size: 4rem;
-}
-
-/*flex-wrap: wrap brings all the images inside the border of every gallery-item*/
-.gallery {
-    margin-top: 1.25rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-
-/*gallery item class selector for figure tag - the frames*/
-.gallery-item {
-    /*border: .4rem solid #000;*/
-    margin: 1.25rem;
-    
-}
-
-/*class selector for img tag inside figure*/
-.thumbnail {
-   height: 18rem;
-   width: 18rem;
-   object-fit: cover;
-}
-
-
-/*End Gallery*/
 
 /*SKILLS*/
 #skills {
@@ -187,26 +122,116 @@ header p {
     /*text-shadow: 0.2rem 0.2rem 0.2rem #000;*/
 }
 
-#skills ul {
-    text-align: center;
-}
-
-.nobull {
-    list-style-type: none;
-}
-
 #skill-icons {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    background-color: rgba(0, 0, 0, .25);
+    border-radius: 8px;
+    margin: 2rem;
 }
 
 #skill-icons img {
     width: 5rem;
     height: 5rem;
+    margin: 1rem;
 }
 
-#beginner-center {
-    text-align: center;
+
+/*END SKILLS*/
+
+
+
+/*GALLERY 2.0 Start*/
+
+#gallery-id { /*defines the Parent container size of Gallery*/
+    margin-bottom: 4rem;
+    margin-top: 2rem;
 }
+
+#gallery-id h2 {
+    color: #4A5C47;
+    text-align: center;
+    font-size: 4rem;
+}
+
+#galleryButton { /*BUTTON STYLING - actual code in JS showHideFunction*/
+    color: whitesmoke;
+    background-image: url(images/galleryArt/fanArtMilesMorales.png); /*pretty windows 95 i can probably wrap the button on an img tag in html for better results*/
+    background-size: cover;
+    border: none;
+    margin-top: 2rem;
+}
+
+
+.media-scroller { /*thank you Kevin Powell */
+    display:grid;
+    grid-auto-flow: column; /*columns (not rows) get it horizontal*/
+    grid-auto-columns: 28%; /*dont put at easily divisible into 100 eg 25% or 50% put it slightly off eg 21% or 36% to show that there is more content just beyong to scroll towards*/
+    
+    gap: 10px;
+
+    overflow-x: auto; /*this gives you a horizontal scrolling bar in the media scroller section instead of having to scroll the entire webpage horizontally which would no longer be the ribbon i want */
+    overscroll-behavior-inline: contain; /*when user reaches the end of the scroll, they wont keep scrolling in the parent container, its like a limiting break factor*/
+    /*background-color: rgba(0,0,0,.5); */ /*transparent background using alpha because this ONLY affects background vs the whole box... current rendering looks way better anyway imo*/
+    /*opacity: rgba(0,0,0,.5); *//*transparency using alpha on ENTIRE box doesnt render the same - evaluate this puzzle later*/
+} 
+
+.media-element { /*containers in each column these will house the images or video thumbnails*/
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .3); 
+
+}
+  
+.media-element > img { /*VERY IMPORTANT this alters the size or aspect ratio, it auto crops the image to fit, this looks like cool media, but doesnt play well with my sqaure or portait illustrations so its currently overwridden by figure class gallery item css*/
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+
+
+#media-element-caption { /*aka captions for gallery photos REMOVED .title NOOOO THIS ISNT INCLUSIVE its awful for accessibility and mobile nooooooo need to change*/
+    color: #698365;
+    text-align: center;
+    
+}
+
+
+
+/* OLD GALLERY ITEMS TO BE DELETED ???*/
+
+/*flex-wrap: wrap brings all the images inside the border of every gallery-item
+.gallery {
+    margin-top: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+*/
+
+/*gallery item class selector for figure tag - the frames
+.gallery-item {
+    border: .4rem solid #000; this was commented out too
+    margin: 1.25rem;
+    
+}
+*/
+
+/*class selector for img tag inside figure
+.thumbnail {
+   height: 18rem;
+   width: 18rem;
+   object-fit: cover;
+}
+*/
+
+
+/*END Gallery*/
+
+
+
 
 /*CONTACT*/
 #contact {
@@ -309,10 +334,6 @@ footer img:hover {
 
 #xx-small-text{
     font-size: xx-small;
-}
-
-.underline {
-    text-decoration: underline;
 }
 
 .center {
