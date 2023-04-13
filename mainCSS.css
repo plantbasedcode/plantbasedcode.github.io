@@ -59,7 +59,7 @@ header p {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: rgba(105,131,101); /*tried transparency with alpha but it goes white*/
+    background-color: rgba(105,131,101, .5); /*RGB ONLY 4th value i transparency 0 is full transparent 1 is opaque*/
     color: whitesmoke;
     cursor: pointer;
     padding: 15px;
@@ -68,7 +68,7 @@ header p {
   }
   
 #topButton:hover {
-    background-color: #4A5C47;
+    background-color: rgba(105,131,101, .7);
   }
 
 /*Welcome Message*/
