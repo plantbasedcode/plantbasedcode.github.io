@@ -149,7 +149,7 @@ header p {
 
 /*GALLERY 2.0 Start*/
 
-#gallery-id { /*defines the Parent container size of Gallery*/
+#gallery-id { /*defines the Parent container of Gallery*/
     margin-bottom: 4rem;
     margin-top: 2rem;
 }
@@ -165,9 +165,12 @@ header p {
     background-image: url(images/galleryArt/fanArtMilesMorales.png); /*pretty windows 95 i can probably wrap the button on an img tag in html for better results*/
     background-size: cover;
     border: none;
-    margin-top: 2rem;
+    margin: 2rem;
 }
 
+#dropDownGallery {
+    margin-bottom: 2rem;
+}
 
 .media-scroller { /*thank you Kevin Powell */
     display:grid;
@@ -190,7 +193,7 @@ header p {
   
 .media-element > img { /*VERY IMPORTANT this alters the size or aspect ratio, it auto crops the image to fit, this looks like cool media, but doesnt play well with my sqaure or portait illustrations so its currently overwridden by figure class gallery item css*/
     inline-size: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
   }
 
@@ -202,6 +205,13 @@ header p {
     
 }
 
+/*class selector for img tag inside figure keeps it from being permanently overstretched
+.thumbnail {
+    height: 18rem;
+    width: 18rem;
+    object-fit: cover;
+ }
+  */
 
 
 /* OLD GALLERY ITEMS TO BE DELETED ???*/
@@ -216,21 +226,16 @@ header p {
 }
 */
 
-/*gallery item class selector for figure tag - the frames
+/*gallery item class selector for figure tag - the frames 
 .gallery-item {
     border: .4rem solid #000; this was commented out too
     margin: 1.25rem;
     
 }
+
 */
 
-/*class selector for img tag inside figure
-.thumbnail {
-   height: 18rem;
-   width: 18rem;
-   object-fit: cover;
-}
-*/
+
 
 
 /*END Gallery*/
@@ -258,9 +263,10 @@ header p {
     font-weight: 200;
     text-shadow: 0.2rem 0.2rem 0.2rem #000;
     text-align: top;
+    color: whitesmoke;
 }
 
-#contact .col-12 {
+#contact .col-sm-12 {
     justify-content: center;
 }
 
