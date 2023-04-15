@@ -165,11 +165,11 @@ header p {
     background-image: url(images/galleryArt/fanArtMilesMorales.png); /*pretty windows 95 i can probably wrap the button on an img tag in html for better results*/
     background-size: cover;
     border: none;
-    margin: 2rem;
+    margin-top: 1.5rem;
 }
 
 #dropDownGallery {
-    margin-bottom: 2rem;
+    margin-top: 1.5rem;
 }
 
 .media-scroller { /*thank you Kevin Powell */
@@ -253,6 +253,7 @@ header p {
     text-shadow: 0.1rem 0.1rem 0.1rem #000000;
     font-size: 2rem;
     text-align: center;
+    justify-content: center;
     
 }
 
@@ -266,9 +267,7 @@ header p {
     color: whitesmoke;
 }
 
-#contact .col-sm-12 {
-    justify-content: center;
-}
+
 
 /*FOOTER*/
 footer {
@@ -282,14 +281,10 @@ footer .col-12 {
     justify-content: center;
 }
 
-footer .col-8 {
+
+#externalPortfolioLinks {
     display: flex;
-    justify-content: flex-end;
-}
-
-
-footer .col-1 {
-    margin-left: 2rem;
+    justify-content:center;
 }
 
 footer a:link {
@@ -320,6 +315,10 @@ footer  a:active {
 footer ul {
     list-style: none;
 } 
+
+footer li {
+    margin-left: 2rem;
+}
 
 
 footer li img {
