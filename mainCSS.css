@@ -192,6 +192,7 @@ header p {
     background-size: cover;
     border: none;
     margin-top: 1.5rem;
+    border-radius: 4px;
 }
 
 #dropDownGallery {
