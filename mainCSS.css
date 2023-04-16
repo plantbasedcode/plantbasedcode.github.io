@@ -191,6 +191,7 @@ header p {
     width: 10rem;
     height: 10rem;
     position: relative;
+    margin-left: 2rem;
 }
 
 #galleryButton img {
