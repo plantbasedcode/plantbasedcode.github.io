@@ -228,6 +228,7 @@ header p {
 #media-element-caption { /*aka captions for gallery photos REMOVED .title NOOOO THIS ISNT INCLUSIVE its awful for accessibility and mobile nooooooo need to change*/
     color: #698365;
     text-align: center;
+    margin-top: .5rem;
     
 }
 
