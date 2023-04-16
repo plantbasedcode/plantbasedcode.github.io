@@ -26,7 +26,7 @@ let mybutton = document.getElementById("topButton");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+  if (document.body.scrollTop > 270 || document.documentElement.scrollTop > 270) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";

@@ -16,8 +16,8 @@ header {
 }
 
 
-header .row,
-footer .row { /*Flex made this possible - learn more later*/
+
+header .row { 
     display: flex;
     align-items: center;
 }
@@ -53,7 +53,32 @@ header p {
 
 /*END HEADER*/
 
-/*return to top button styling*/
+/*return to top button styling version 2*/
+
+#topButton {
+    display: none;  
+    position: fixed;
+    bottom: 1rem;
+    right: 1.1rem;
+    z-index: 99;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background-color: rgba(105,131,101, .2); 
+    color: rgba(245, 245, 245, .5); 
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    backdrop-filter: blur(4px);
+  }
+
+  #topButton:hover {
+    text-shadow: #FC0 1px 0 10px; 
+    box-shadow: #FC0 0 0 10px;
+  }
+
+
+/*version 1top button
 #topButton {
     display: none;  
     position: fixed;
@@ -63,19 +88,20 @@ header p {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: rgba(105,131,101, .5); /*RGB ONLY 4th value i transparency 0 is full transparent 1 is opaque*/
-    color: rgba(245, 245, 245, .5); /*whitesmoke as rgb*/
+    background-color: rgba(105,131,101, .5); 
+    color: rgba(245, 245, 245, .5); 
     cursor: pointer;
     padding: 15px;
-    border-radius: 50%; /*this will start to round the button starting at 2 4 8 12 it gets softer and at 50% we have an oval*/
-
+    border-radius: 50%;
   }
+  
   
 #topButton:hover {
     background-color: rgba(105,131,101, .7);
-    text-shadow: #FC0 1px 0 10px; /*x offset y offset blur color*/
+    text-shadow: #FC0 1px 0 10px; 
     box-shadow: #FC0 0 0 10px;
   }
+*/
 
 /*Welcome Message*/
 #welcome-message {
