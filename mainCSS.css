@@ -188,11 +188,18 @@ header p {
 
 #galleryButton { /*BUTTON STYLING - actual code in JS showHideFunction*/
     color: whitesmoke;
-    background-image: url(images/galleryArt/fanArtMilesMorales.png); /*pretty windows 95 i can probably wrap the button on an img tag in html for better results*/
-    background-size: cover;
     border: none;
     margin-top: 1.5rem;
     border-radius: 4px;
+    padding: 0;
+    width: 10rem;
+    height: 10rem;
+}
+
+#galleryButton img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    inline-size: 100%;
 }
 
 #dropDownGallery {
