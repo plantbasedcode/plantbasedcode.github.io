@@ -1,10 +1,11 @@
 ﻿
 //this hides the media scroller on load
-window.onload = function(){
-    document.getElementById("dropDownGallery").style.display='none';
+
+window.onload = function hideOnLoad(){
+    document.getElementById("oldArt").style.display='none';
+    document.getElementById("animation").style.display='none';
+    document.getElementById("newArt").style.display='none';
   };
-
-
 
 // creates a dropdown menu button in JS
 
@@ -40,6 +41,6 @@ function topFunction() {
 }
 // END of BACK TO TOP button
 
-
+//
 
 
