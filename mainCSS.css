@@ -223,17 +223,17 @@ header p {
 
     overflow-x: auto; /*this gives you a horizontal scrolling bar in the media scroller section instead of having to scroll the entire webpage horizontally which would no longer be the ribbon i want */
     overscroll-behavior-inline: contain; /*when user reaches the end of the scroll, they wont keep scrolling in the parent container, its like a limiting break factor*/
-    /*background-color: rgba(0,0,0,.5); */ /*transparent background using alpha because this ONLY affects background vs the whole box... current rendering looks way better anyway imo*/
+    /*background-color: rgba(0,0,0,.3); */ /*transparent background using alpha because this ONLY affects background vs the whole box... current rendering looks way better anyway imo*/
     /*opacity: rgba(0,0,0,.5); *//*transparency using alpha on ENTIRE box doesnt render the same - evaluate this puzzle later*/
 } 
 
 .media-element { /*containers in each column these will house the images or video thumbnails*/
     padding: 10px;
-    background-color: rgba(0, 0, 0, .3); 
+    background-color: rgba(0, 0, 0, .5); 
 
 }
   
-.media-element > img { /*VERY IMPORTANT this alters the size or aspect ratio, it auto crops the image to fit, this looks like cool media, but doesnt play well with my sqaure or portait illustrations so its currently overwridden by figure class gallery item css*/
+.media-element > img { /*VERY IMPORTANT this alters the size or aspect ratio, it auto crops the image to fit*/
     inline-size: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
@@ -241,7 +241,7 @@ header p {
 
 
 
-#media-element-caption { /*aka captions for gallery photos REMOVED .title NOOOO THIS ISNT INCLUSIVE its awful for accessibility and mobile nooooooo need to change*/
+#media-element-caption { /*aka captions for gallery photos*/
     color: #698365;
     text-align: center;
     margin-top: .5rem;
@@ -300,7 +300,6 @@ header p {
     
 }
 
-/*credit to https://unsplash.com/@sorasagano stock photos*/
 
 #contact h2 {
     font-size: 4rem;
@@ -392,3 +391,5 @@ footer img:hover {
 .center {
     text-align: center;
 }
+
+/*credit to https://unsplash.com/@sorasagano stock photos*/
