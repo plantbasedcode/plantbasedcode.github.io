@@ -198,8 +198,9 @@ header p {
     aspect-ratio: 1 / 1;
     object-fit: cover;
     inline-size: 100%;
-    filter: blur(2px);
+    filter: blur(3px);
 }
+
 
 #galleryButton p {
     color: rgba(245, 245, 245);
@@ -233,19 +234,27 @@ header p {
 
 }
   
-.media-element > img { /*VERY IMPORTANT this alters the size or aspect ratio, it auto crops the image to fit*/
+.media-element img { /*VERY IMPORTANT this alters the size or aspect ratio, it auto crops the image to fit*/
     inline-size: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
   }
 
-
+.media-element video {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    inline-size: 100%;
+}
 
 #media-element-caption { /*aka captions for gallery photos*/
     color: #698365;
     text-align: center;
     margin-top: .5rem;
     
+}
+
+#sakamoto {
+    transform: rotate(-90deg);
 }
 
 /*class selector for img tag inside figure keeps it from being permanently overstretched
