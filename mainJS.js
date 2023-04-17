@@ -8,8 +8,8 @@ window.onload = function(){
 
 // creates a dropdown menu button in JS
 
-function showHideFunction() {
-    var x = document.getElementById("dropDownGallery");
+function showHideFunction(stringIdToCall) {
+    var x = document.getElementById(stringIdToCall);
     if (x.style.display === "none") {
       x.style.display = "block";
     } else {

@@ -210,7 +210,7 @@ header p {
     bottom: 6rem;
 }
 
-button:hover {
+#gallery-id button:hover {
     filter: drop-shadow(0 0 1rem rgba(245, 245, 245, .5));  /*LOVE filter drop shadow*/
 }
 
