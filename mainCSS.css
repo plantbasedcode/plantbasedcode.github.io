@@ -178,6 +178,20 @@ header p {
     font-size: 4rem;
 }
 
+#gallery-id h3 {
+    color: rgba(74, 92, 71, .8);
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+
+#gallery-id h4 {
+    color: rgba(74, 92, 71, .8);
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
 #galleryButton { /*BUTTON STYLING - actual code in JS showHideFunction*/
     border: none;
     margin-top: 1.5rem;
@@ -186,7 +200,7 @@ header p {
     width: 10rem;
     height: 10rem;
     position: relative;
-    margin-left: 2rem;
+    
 }
 
 #galleryButton img {
@@ -248,7 +262,7 @@ header p {
     
 }
 
-#sakamoto {
+#rotate-90 {
     transform: rotate(-90deg);
 }
 

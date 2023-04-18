@@ -102,32 +102,153 @@
     <!-- GALLERY 2.0 HORIZONTAL SCROLL maybe just with class mods and scroll snap-->
     <section class="container" id="gallery-id">
         <div class="row">
-            <h2 class="col-12">Art Gallery</h2>
+            <h2 class="col-sm-12 center">Art Gallery</h2>
         </div> <!--Section Title row-->
 
         <!--galleryButton aka dropDownGallery BUTTON row TRIAL 3 FOLDERS-->
 
-        <div class="row"> <!--NEWER ART FOLDER GOOD NUFF-->
+        <!--basic       <div class="media-element">
+                            <img loading="lazy" src="" alt="" />
+                            <p id="media-element-caption"></p>
+                        </div> -->
+
+        <div>
+            <h3 class="col-sm-12 center">Fan Art</h3>
+        </div>
+
+        <div class="row"> <!--NEWER Fan ART FOLDER GOOD NUFF-->
             <div class="col-sm-12 center">
-                <button  id="galleryButton" onclick="showHideFunction('newArt')">
+                <button  id="galleryButton" onclick="showHideFunction('newFanArt')">
                     <img src="images/galleryArt/newerArt/devilish darlings fan art.jpg" />
                     <p>Newer</p>
                 </button>
                 
-                <div id="newArt"> <!--newer drop down content-->
+                <div id="newFanArt"> <!--newer drop down content-->
                     <div class="media-scroller with-overscroll snaps-inline snaps--individual">
                         <div class="media-element">
                             <img loading="lazy" src="images/galleryArt/newerArt/jjk sukuna.jpg" alt="Sukuna from JJK anime fan art" />
-                            <p id="media-element-caption">Sukuna JJK &#40;Fan Art&#41;</p>
+                            <p id="media-element-caption">Sukuna &#40;Jujutsu Kaisen&#41;</p>
                         </div>
                         <div class="media-element">
-                            <img id="sakamoto" loading="lazy" src="images/galleryArt/newerArt/sakamotoDaysfanart.jpg" alt="sakamoto days fan art" />
-                            <p id="media-element-caption">Sakamoto Days &#40;Fan Art&#41;</p>
+                            <img id="rotate-90" loading="lazy" src="images/galleryArt/newerArt/sakamotoDaysfanart.jpg" alt="sakamoto days fan art" />
+                            <p id="media-element-caption">Cover Redraw Practice &#40;Sakamoto Days&#41;</p>
                         </div>
                         <div class="media-element">
                             <img loading="lazy" src="images/galleryArt/newerArt/chainsawman power.jpg" alt="Power from Chainsaw Man anime fan art" />
-                            <p id="media-element-caption">Power Chainsaw Man &#40;Fan Art&#41;</p>
+                            <p id="media-element-caption">Power  &#40;Chainsaw Man&#41;</p>
                         </div>
+                        <div class="media-element">
+                            <img id="rotate-90" loading="lazy" src="images/galleryArt/olderHandDrawn/samurai champloo png.png" alt="fuu from samurai champloo in comedic mid fall moment" />
+                            <p id="media-element-caption">Fuu &#40;Samurai Champloo&#41;</p>
+                        </div>
+                        <div class="media-element">
+                            <img id="rotate-90" loading="lazy" src="images/galleryArt/olderHandDrawn/gokushufudou noname.png" alt="Tatsu from Way of the House Husband Gokushufudou Manga Fan Art" />
+                            <p id="media-element-caption">Tatsu &#40;Gokushufudou&#41;</p>
+                        </div>
+                        <div class="media-element">
+                            <img loading="lazy" src="images/galleryArt/newerArt/jjk goujo.jpg" alt="jjk satoru gojo sensei fan art" />
+                            <p id="media-element-caption">Satoru Gojo Sketch &#40;Jujutsu Kaisen&#41;</p>
+                        </div>
+                        <div class="media-element">
+                            <img loading="lazy" src="images/galleryArt/newerArt/devilish darlings fan art.jpg" alt="Devilish Darlings 2 monster babes fan art" />
+                            <p id="media-element-caption">Nia &#38; Rosette &#40;Devilish Darlings&#41;</p>
+                        </div>
+                        <div class="media-element">
+                            <img loading="lazy" src="images/galleryArt/olderHandDrawn/blue period noname.png" alt="Blue Period Yatora Yaguchi" />
+                            <p id="media-element-caption">Yaguchi &#40;Blue Period&#41;</p>
+                        </div>
+                        <div class="media-element">
+                            <img loading="lazy" src="images/galleryArt/olderHandDrawn/master roshi dbz noname.png" alt="Master Roshi DBZ fan art" />
+                            <p id="media-element-caption">Roshi&#47;Kame Sensei &#40;DBZ&#41;</p>
+                        </div>
+
+                        <div class="media-element">
+                            <img loading="lazy" src="images/galleryArt/olderHandDrawn/hikariKuina Alice in borderlands fan art.jpg" alt="Hikari Kuina Alice in borderlands fan art" />
+                            <p id="media-element-caption">Hikari Kuina&#8205; &#127752; &#40;Alice in Borderlands&#41;</p>
+                        </div>
+                        <div class="media-element">
+                            <img loading="lazy" src="images/galleryArt/olderHandDrawn/eurydice hades.jpg" alt="Eurydice from Hades game fan art" />
+                            <p id="media-element-caption">Eurydice &#40;Hades&#41;</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row"> <!--OLDER ART FAN FOLDER GOOD NUFF-->
+            <div class="col-sm-12 center">
+                <button  id="galleryButton" onclick="showHideFunction('oldFanArt')">
+                    <img src="images/galleryArt/olderArt/Rock_Lee.png" />
+                    <p>Older</p>
+                </button>
+
+                <div id="oldFanArt"> <!--Old Art Drop down content-->
+                    <div class="media-scroller with-overscroll snaps-inline snaps--individual">
+                        <div class="media-element">
+                            <img  loading="lazy" src="images/galleryArt/olderArt/Rock_Lee.png" alt="Fan Art! Rock Lee's face from Naruto in his drunken fist/drunken monkey martial arts pose." />
+                            <p id="media-element-caption">Drunken Rock Lee &#40;Naruto&#41;</p>
+                        </div>
+                        <div class="media-element">
+                            <img  loading="lazy" src="images/galleryArt/olderArt/May_4.png" alt="Fan Art! My redesign of Chewbacca the Wookie for May the 4th." />
+                            <p id="media-element-caption">Redesign of Chewbacca &#40;May the Fourth&#41;</p>
+                        </div>
+                        <div class="media-element">
+                            <img loading="lazy" src="images/galleryArt/olderArt/GlibAndTibMaryAndTheWitchesFlower.png" alt="Cats Glib and Tib from Mary and the Witches Flower fan art" />
+                            <p id="media-element-caption">Glib and Tib &#40;Mary and the Witch&#39;s Flower&#41;</p>
+                        </div>
+                       
+                        <div class="media-element">
+                            <img loading="lazy" src="images/galleryArt/olderHandDrawn/pokemon warmups.jpg" alt="Warmup page of pokemon sketches" />
+                            <p id="media-element-caption">Warmup Sketches &#40;Pok&#233;mon&#41;</p>
+                        </div>
+                        <div class="media-element">
+                            <img id="rotate-90" loading="lazy" src="images/galleryArt/olderHandDrawn/sam cannonbusters.jpg" alt="Friendly bipoc android bodyguard named SAM from Cannon Busters" />
+                            <p id="media-element-caption">SAM &#40;Cannon Busters&#41;</p>
+                        </div>
+                        <div class="media-element">
+                            <img loading="lazy" src="images/galleryArt/olderHandDrawn/odd taxi.jpg" alt="Odd Taxi fan art" />
+                            <p id="media-element-caption">Odokawa &#40;Odd Taxi&#41;</p>
+                        </div>
+                        <div class="media-element">
+                            <img  loading="lazy" src="images/galleryArt/olderArt/Midnight_Gospel.png" alt="Fan Art! Clancy from Midnight Gospel entering the simulator as it malfunctions." />
+                            <p id="media-element-caption">Malfunctioning Simulator &#40;Midnight Gospel&#41;</p>
+                        </div>
+                        <div class="media-element">
+                            <img  loading="lazy" src="images/galleryArt/olderArt/fanArtMilesMorales.png" alt="Fan Art! Miles Morales in his Spidey outfit from Into the Spiderverse." />
+                            <p id="media-element-caption">Miles Morales &#40;Into the Spiderverse&#41;</p>
+                        </div>
+
+                        <div class="media-element">
+                            <img loading="lazy" src="images/galleryArt/newerArt/hellsing ultimate alucard.jpg" alt="quick sketch of alucrad from hellsing ultimate fan art" />
+                            <p id="media-element-caption">Alucard &#40;Hellsing Ultimate&#41;</p>
+                        </div>
+                        <div class="media-element">
+                            <img loading="lazy" src="images/galleryArt/newerArt/rooster fighter fan art.jpg" alt="rooster fighter fan art warm up" />
+                            <p id="media-element-caption">Warmup Sketch &#40;Rooster Fighter&#41;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!--MY ART  and END of FAN ART-->
+        
+        <div>
+            <h3 class="col-sm-12 center">My Art</h3>
+        </div>
+
+        <div class="row"> <!--MY newer ART or handdrawn only FOLDER GOOD NUFF-->
+            <div class="col-sm-12 center">
+                <button  id="galleryButton" onclick="showHideFunction('newArt')">
+                    <img src="images/galleryArt//newerArt/lovebirds.jpg" />
+                    <p>Paper</p>
+                </button>
+                
+                <div id="newArt"> <!--my newer drop down content-->
+                    <div class="media-scroller with-overscroll snaps-inline snaps--individual">
 
                         <div class="media-element">
                             <img loading="lazy" src="images/galleryArt/newerArt/lovebirds.jpg" alt="love birds sketch" />
@@ -146,30 +267,13 @@
                             <p id="media-element-caption">Still Life Ink Sketch 2</p>
                         </div>
                         
-                        <div class="media-element">
-                            <img loading="lazy" src="images/galleryArt/newerArt/hellsing ultimate alucard.jpg" alt="alucrad from hellsing ultimate fan art" />
-                            <p id="media-element-caption">Hellsing Ultimate &#40;Fan Art&#41;</p>
-                        </div>
-                        <div class="media-element">
-                            <img loading="lazy" src="images/galleryArt/newerArt/rooster fighter fan art.jpg" alt="rooster fighter fan art" />
-                            <p id="media-element-caption">Rooster Fighter Quick Sketch &#40;Fan Art&#41;</p>
-                        </div>
-                        <div class="media-element">
-                            <img loading="lazy" src="images/galleryArt/newerArt/jjk goujo.jpg" alt="jjk satoru gojo sensei fan art" />
-                            <p id="media-element-caption">Satoru Gojo JJK &#40;Fan Art&#41;</p>
-                        </div>
-                        <div class="media-element">
-                            <img loading="lazy" src="images/galleryArt/newerArt/devilish darlings fan art.jpg" alt="Devilish Darlings queer ecchi Couple fan art" />
-                            <p id="media-element-caption">Devilish Darlings &#8205; &#127752; &#40;Fan Art&#41;</p>
-                        </div>
-
                     </div>
                 </div>
             </div>
 
         </div>
 
-        <div class="row"> <!--animation folder GOOD NUFF-->
+        <div class="row"> <!--MY animation folder GOOD NUFF-->
             <div class="col-sm-12 center">
                 <button  id="galleryButton" onclick="showHideFunction('animation')">
                     <img src="images/galleryArt/olderArt/craftEspressoLogo.gif" />
@@ -178,14 +282,19 @@
 
                 <div id="animation"> <!--animation Drop down content-->
                     <div class="media-scroller with-overscroll snaps-inline snaps--individual">
+                        
                         <div class="media-element">
-                            <img loading="lazy" src="images/galleryArt/olderArt/craftEspressoLogo.gif" alt="Vector animation logo Craft Espresso Faux coffee shop" />
-                            <p id="media-element-caption">Animated Vector Logo &#40;Class Project&#41;</p>
+                            <video controls>
+                                <source src="images/galleryArt/animation/Walk_Cycle_02_slower_-_mannequin-mp4.mp4" type="video/mp4">
+                                Your browser does not support this video format&#46;
+                            </video>
+                            <p id="media-element-caption">Walk Cycle Animatic</p>
                         </div>
                         <div class="media-element">
                             <img loading="lazy" src="images/galleryArt/animation/upper half  walk cycle (denji strut reference).gif" alt="rough animatic trying to analyze the Denjis strut from chainsaw man anime" />
                             <p id="media-element-caption">Denji&#39;s Confident Strut &#40;Study&#41;</p>
                         </div>
+
                         <div class="media-element">
                             <video controls>
                                 <source src="images/galleryArt/animation/single explosion 01.mp4" type="video/mp4">
@@ -200,12 +309,10 @@
                             </video>
                             <p id="media-element-caption">2DFX Large Explosion 6fps Animatic</p>
                         </div>
+
                         <div class="media-element">
-                            <video controls>
-                                <source src="images/galleryArt/animation/Walk_Cycle_02_slower_-_mannequin-mp4.mp4" type="video/mp4">
-                                Your browser does not support this video format&#46;
-                            </video>
-                            <p id="media-element-caption">Walk Cycle Animatic</p>
+                            <img loading="lazy" src="images/galleryArt/olderArt/craftEspressoLogo.gif" alt="Vector animation logo Craft Espresso Faux coffee shop" />
+                            <p id="media-element-caption">Animated Vector Logo &#40;Class Project&#41;</p>
                         </div>
                         <div class="media-element">
                             <img loading="lazy" src="images/galleryArt/animation/DSMH_motionfx.gif" alt="Animated Logo DSMH" />
@@ -216,29 +323,17 @@
             </div>
  
         </div>
-    
 
-        <div class="row"> <!--OLD ART FOLDER GOOD NUFF-->
+        <div class="row"> <!--MY OLDER or maybe digital  ART FOLDER GOOD NUFF-->
             <div class="col-sm-12 center">
                 <button  id="galleryButton" onclick="showHideFunction('oldArt')">
                     <img src="images/galleryArt/olderArt/Rose_Afro_2019.jpg" />
-                    <p>Older</p>
+                    <p>Digital</p>
                 </button>
 
-                <div id="oldArt"> <!--Old Art Drop down content-->
+                <div id="oldArt"> <!--my Old Art Drop down content-->
                     <div class="media-scroller with-overscroll snaps-inline snaps--individual">
-                        <div class="media-element">
-                            <img  loading="lazy" src="images/galleryArt/olderArt/Rock_Lee.png" alt="Fan Art! Rock Lee's face from Naruto in his drunken fist/drunken monkey martial arts pose." />
-                            <p id="media-element-caption">Drunken Rock Lee &#40;Fan Art&#41;</p>
-                        </div>
-                        <div class="media-element">
-                            <img  loading="lazy" src="images/galleryArt/olderArt/May_4.png" alt="Fan Art! My redesign of Chewbacca the Wookie for May the 4th." />
-                            <p id="media-element-caption">Redesign of Chewbacca &#40;Fan Art&#41;</p>
-                        </div>
-                        <div class="media-element">
-                            <img loading="lazy" src="images/galleryArt/olderArt/GlibAndTibMaryAndTheWitchesFlower.png" alt="Cats Glib and Tib from Mary and the Witches Flower fan art" />
-                            <p id="media-element-caption">Glib and Tib &#40;Fan Art&#41;</p>
-                        </div>
+                        
                         <div class="media-element">
                             <img loading="lazy" src="images/galleryArt/olderArt/Elephant_And_Bird.png" alt="Digital painting of bird and elephant." />
                             <p id="media-element-caption">Watching Nature Documentaries</p>
@@ -248,47 +343,41 @@
                             <p id="media-element-caption">Stormy Waves</p>
                         </div>
                         <div class="media-element">
-                            <img loading="lazy" src="images/galleryArt/olderArt/cha moe tea commission.png" alt="Moe chamomile tea with chinese character for tea" />
-                            <p id="media-element-caption">Moe Chamomile</p>
-                        </div>
-                        <div class="media-element">
                             <img loading="lazy" src="images/galleryArt/olderArt/Alien_Adventurer.png" alt="POC in scifi clothes, beside a crashed spaceship wrapped in vines and an alien snake that's even larger." />
                             <p id="media-element-caption">Trade Negotiations</p>
                         </div>
-                        
-
                         <div class="media-element">
-                            <img loading="lazy" src="images/galleryArt/olderArt/Rose_Afro_2019.jpg" alt="A beautiful fem BIPOC with afro made of roses peering through a magnifying glass whose lens is reflecting another rose." />
-                            <p id="media-element-caption">Discovering Mysteries of Nature</p>
+                            <img loading="lazy" src="images/galleryArt/olderArt/cha moe tea commission.png" alt="Moe chamomile tea with chinese character for tea" />
+                            <p id="media-element-caption">Moe Chamomile</p>
                         </div>
+
+                       
                         <div class="media-element">
                             <img loading="lazy" src="images/galleryArt/olderArt/bobRossQuotePSManipulation.png" alt="Bob Ross quote on stock photo background with some photo manipulation" />
                             <p id="media-element-caption">Inspirational Poster &#40;Adobe PSD Challenge&#41;</p>
+                        </div>
+                        <div class="media-element">
+                            <img loading="lazy" src="images/galleryArt/olderArt/ps daily challenge album art redesign.jpg" alt="ps daily challenge album art redesign" />
+                            <p id="media-element-caption">Album Art Redesign &#40;Adobe PSD Challenge&#41;</p>
                         </div>
                         <div class="media-element">
                             <img loading="lazy" src="images/galleryArt/olderArt/ps daily challenge type and texture.jpg" alt="PS Daily Challenge on adobe live to make a poster my say breath in out relax" />
                             <p id="media-element-caption">Hand&#45;drawn Mandalas&#44; Type and Texture  &#40;Adobe PSD Challenge&#41;</p>
                         </div>
                         <div class="media-element">
-                            <img loading="lazy" src="images/galleryArt/olderArt/ps daily challenge album art redesign.jpg" alt="ps daily challenge album art redesign" />
-                            <p id="media-element-caption">Album Art Redesign &#40;Adobe PSD Challenge&#41;</p>
+                            <img loading="lazy" src="images/galleryArt/olderArt/Rose_Afro_2019.jpg" alt="A beautiful fem BIPOC with afro made of roses peering through a magnifying glass whose lens is reflecting another rose." />
+                            <p id="media-element-caption">Discovering Mysteries of Nature &#40;Adobe PSD Challenge&#41;</p>
                         </div>
-
-                        
-                        <div class="media-element">
-                            <img  loading="lazy" src="images/galleryArt/olderArt/Midnight_Gospel.png" alt="Fan Art! Clancy from Midnight Gospel entering the simulator as it malfunctions." />
-                            <p id="media-element-caption">Midnight Gospel Malfunctioning Simulator &#40;Fan Art&#41;</p>
-                        </div>
-                        <div class="media-element">
-                            <img  loading="lazy" src="images/galleryArt/olderArt/fanArtMilesMorales.png" alt="Fan Art! Miles Morales in his Spidey outfit from Into the Spiderverse." />
-                            <p id="media-element-caption">Miles Morales &#40;Fan Art&#41;</p>
-                        </div>
-                       
                     </div>
                 </div>
             </div>
             
         </div>
+
+        
+    
+
+        
 
     
         <!--galleryButton aka dropDownGallery BUTTON row working

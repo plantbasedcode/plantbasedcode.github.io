@@ -5,6 +5,8 @@ window.onload = function hideOnLoad(){
     document.getElementById("oldArt").style.display='none';
     document.getElementById("animation").style.display='none';
     document.getElementById("newArt").style.display='none';
+    document.getElementById("oldFanArt").style.display='none';
+    document.getElementById("newFanArt").style.display='none';
   };
 
 // creates a dropdown menu button in JS
