@@ -185,12 +185,6 @@ header p {
     margin-top: 1rem;
 }
 
-#gallery-id h4 {
-    color: rgba(74, 92, 71, .8);
-    text-align: center;
-    font-size: 1rem;
-    margin-top: 1rem;
-}
 
 #galleryButton { /*BUTTON STYLING - actual code in JS showHideFunction*/
     border: none;
@@ -214,15 +208,17 @@ header p {
 #galleryButton p {
     color: rgba(245, 245, 245, .8);
     font-size: 2rem;
-    text-shadow: 0.1rem 0.1rem 0.1rem #000000;
     text-align: center;
     position: relative;
-    bottom: 6rem;
+    bottom: 7rem;
 }
 
 #gallery-id button:hover {
     filter: drop-shadow(0 0 1rem rgba(245, 245, 245, .5));  /*LOVE filter drop shadow*/
+    color: rgba(245, 245, 245, .8);
+    text-shadow: 0.1rem 0.1rem 0.3rem #000000;
 }
+
 
 .media-scroller { /*thank you Kevin Powell */
     display:grid;

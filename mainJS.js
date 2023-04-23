@@ -2,11 +2,13 @@
 //this hides the media scroller on load
 
 window.onload = function hideOnLoad(){
-    document.getElementById("oldArt").style.display='none';
+    document.getElementById("myDigitalArt").style.display='none';
     document.getElementById("animation").style.display='none';
-    document.getElementById("newArt").style.display='none';
+    document.getElementById("analogArt").style.display='none';
     document.getElementById("oldFanArt").style.display='none';
     document.getElementById("newFanArt").style.display='none';
+    document.getElementById("myArt").style.display='none';
+    document.getElementById("fanArt").style.display='none';
   };
 
 // creates a dropdown menu button in JS
