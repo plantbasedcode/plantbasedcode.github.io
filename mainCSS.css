@@ -51,6 +51,42 @@ header p {
     margin: 1rem; /*spacing between nav a links - padding is for text inside element margin for seperating different divs or larger pieces*/
 }
 
+
+/*https://alvarotrigo.com/blog/css-text-animations/*/
+
+.animate-text
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #698365 0%,
+    #4A5C47 25%,
+    #41513e 40%,
+    #698365 50%,
+    #41513e 60%,
+    #4A5C47 75%,
+    #698365 100%
+  );
+
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 3rem;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
 /*END HEADER*/
 
 /*return to top button styling version 2*/
@@ -144,6 +180,15 @@ header p {
     /*text-shadow: 0.2rem 0.2rem 0.2rem #000;*/
 }
 
+#skills h3 {
+    font-size: 2rem;
+    font-weight: 200;
+    color: #4A5C47;
+    text-align: center;
+    margin-bottom: 1rem;
+    /*text-shadow: 0.2rem 0.2rem 0.2rem #000;*/
+}
+
 #skill-icons {
     display: flex;
     flex-wrap: wrap;
@@ -176,6 +221,7 @@ header p {
     color: #4A5C47;
     text-align: center;
     font-size: 4rem;
+    margin-bottom: 2rem;
 }
 
 #gallery-id h3 {
@@ -186,14 +232,16 @@ header p {
 }
 
 
+
 #galleryButton { /*BUTTON STYLING - actual code in JS showHideFunction*/
     border: none;
-    margin-top: 1.5rem;
     border-radius: 4px;
     padding: 0;
     width: 10rem;
     height: 10rem;
     position: relative;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     
 }
 
@@ -210,11 +258,11 @@ header p {
     font-size: 2rem;
     text-align: center;
     position: relative;
-    bottom: 7rem;
+    bottom: 60%;
 }
 
 #gallery-id button:hover {
-    filter: drop-shadow(0 0 1rem rgba(245, 245, 245, .5));  /*LOVE filter drop shadow*/
+    filter: drop-shadow(0 0 .8rem rgba(245, 245, 245, .5));  /*LOVE filter drop shadow*/
     color: rgba(245, 245, 245, .8);
     text-shadow: 0.1rem 0.1rem 0.3rem #000000;
 }
@@ -224,8 +272,11 @@ header p {
     display:grid;
     grid-auto-flow: column; /*columns (not rows) get it horizontal*/
     grid-auto-columns: 28%; /*dont put at easily divisible into 100 eg 25% or 50% put it slightly off eg 21% or 36% to show that there is more content just beyong to scroll towards*/
-    
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+
     gap: 10px;
+
 
     overflow-x: auto; /*this gives you a horizontal scrolling bar in the media scroller section instead of having to scroll the entire webpage horizontally which would no longer be the ribbon i want */
     overscroll-behavior-inline: contain; /*when user reaches the end of the scroll, they wont keep scrolling in the parent container, its like a limiting break factor*/
