@@ -9,6 +9,7 @@ window.onload = function hideOnLoad(){
     document.getElementById("newFanArt").style.display='none';
     document.getElementById("myArt").style.display='none';
     document.getElementById("fanArt").style.display='none';
+    document.getElementById("sandyTheCatDropDown").style.display='none';
   };
 
 // creates a dropdown menu button in JS

@@ -204,6 +204,7 @@ header p {
     height: 5rem;
     margin: 1rem;
     border-radius: 20%;
+    filter: brightness(90%);
 }
 
 /*END SKILLS*/
@@ -242,6 +243,7 @@ header p {
     position: relative;
     margin-bottom: 1rem;
     margin-top: 1rem;
+    outline-width: 0;
     
 }
 
@@ -250,6 +252,7 @@ header p {
     object-fit: cover;
     inline-size: 100%;
     filter: blur(3px);
+    
 }
 
 
@@ -258,7 +261,7 @@ header p {
     font-size: 2rem;
     text-align: center;
     position: relative;
-    bottom: 60%;
+    bottom: 69%;
 }
 
 #gallery-id button:hover {
@@ -311,6 +314,56 @@ header p {
 
 #rotate-90 {
     transform: rotate(-90deg);
+}
+
+#sandyTheCatRow {
+    background-color: rgba(0, 0, 0, .15);
+}
+
+#sandyTheCatRow a {
+    margin: 1.5rem;
+    filter: brightness(85%);
+}
+
+#sandyTheCatRow a:hover {
+    filter: drop-shadow(0 0 .8rem rgba(106, 63, 235));
+}
+
+#galleryButton2 {
+    width: 10rem;
+    height: 10rem;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline-width: 0;
+    margin-top: 1.5rem;
+}
+
+#galleryButton2 img {
+    inline-size: 100%;
+    aspect-ratio: 1 /1;
+    object-fit: cover;  
+    filter: brightness(90%);
+}
+
+#galleryButton2 :hover {
+    filter: drop-shadow(0 0 .8rem rgba(245, 245, 245, .5));  /*LOVE filter drop shadow*/
+    color: rgba(245, 245, 245, .6); 
+}
+
+#sandyTheCatDropDown {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+
+.media-element2 {
+    margin: 1.5rem;
+}
+  
+.media-element2 img { /*VERY IMPORTANT this alters the size or aspect ratio, it auto crops the image to fit*/
+    inline-size: 100%;
+    aspect-ratio: 9 / 16;
+    object-fit: contain;
+    filter: brightness(85%);
 }
 
 /*class selector for img tag inside figure keeps it from being permanently overstretched
@@ -397,6 +450,7 @@ footer a:link {
     color: #4A5C47;
     background-color: transparent;
     text-decoration: #4A5C47;
+
  }
   
 footer  a:visited {
@@ -431,10 +485,12 @@ footer li img {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
+    filter: brightness(85%);
 }
 
-footer img:hover {
+footer li img:hover {
     box-shadow: 0px 0px 5px 2px #6A3FEB; /*adds a highlight shadow behind the item for UI horizontal offset follows border INPUTS are vertical offset, blur distance, actual?*/
+    filter: brightness(100%);
 }
 
 
