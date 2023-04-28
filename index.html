@@ -8,186 +8,631 @@
     <title>David Seth Designs</title>
     <!--Required meta tags-->
     <meta charset="utf-8" />
-    <!--Bootstrap CSS-->
+    <!--Bootstrap CSS 4.3 ahhhh man I need to link this up to bootstrap 5 for simpler coding-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Link CSS style sheet-->
     <link rel="stylesheet" type="text/css" href="mainCSS.css">
-    <!--Link JS ??-->
+    <!--Link JS???? i did it in the body at the top idk if that is right???-->
 </head>
+
+
 
 <body>
 
-    <!--Header/NavBar at TOP-->
+    <!--back to top button-->
+    <button onclick="topFunction()" id="topButton">Top</button> 
+    
+    <!--JS link to external js page-->
+    <script src="mainJS.js"></script> 
+    
+    <!--HEADER/NavBar at TOP-->
     <header class="container">
         <div class="row">
-            <h1 class="col-sm-4">David Seth Designs</h1>
-            <nav class="col-sm-8">
-                <a href="#gallery-id"><p>Art Gallery</p></a>
+            <h1 class="col-sm-6 animate-text">David Seth Designs</h1>
+            <nav class="col-sm-6">
                 <a href="#skills"><p>Skills</p></a>
+                <a href="#gallery-id"><p>Art Gallery</p></a>
                 <a href="#contact"><p>Contact</p></a>
             </nav>
         </div>
+        
     </header>
 
+    <!--Main CONTENT SECTION-->
     <main>
 
-    <!--Welcome: bkgd img + welcome/under construction message?-->
+    <!--Welcome: bkgd img + welcome/under construction message? GOOD NUFF-->
     <section class="jumbotron jumbotron-fluid" id="welcome-message">
         <div class="container">
             <div class="row">
-                <h2 class="col-sm-12">David Seth Designs</h2>
+                <div  class="col-sm-12">
+                    <h2>Who is Dave&#63;</h2>
+                </div>
+                
             </div>
             <div class="row">
-                <h3 class="col-sm-12">My name is David Seth Weitzel - I am a digital artist and jr. web developer.</h3>
+                <p class="col-sm-12">I&#39;m a 2D visual artist who loves animation and story telling&#46; I also have experience with front end web development and graphic design&#46; <br /><br />Welcome to my virtual space&#33;</p>
             </div>
         </div>
     </section>
 
-    <!-- GALLERY -->
-    <section class="container">
-        <div class="row" id="gallery-id">
-            <h2 class="col-sm-12">Art Gallery</h2>
-        </div>
-        <div class="gallery">
-            <figure class="gallery-item">
-                <img class="thumbnail" src="images/galleryArt/statueWoman1.png" alt="A statue of a woman draped in loose robes with seashells convering her breasts." />
-            </figure>
-            <figure class="gallery-item">
-                <img class="thumbnail" src="images/galleryArt/Midnight_Gospel.png" alt="Fan Art! Clancy from Midnight Gospel entering the simulator as it malfunctions." />
-            </figure>
-            <figure class="gallery-item">
-                <img class="thumbnail" src="images/galleryArt/May_4.png" alt="Fan Art! My redesign of Chewbacca the Wookie for May the 4th 2020." />
-            </figure>
-            <figure class="gallery-item">
-                <img class="thumbnail" src="images/galleryArt/DSMH_motionfx.gif" alt="Motion graphic that reads DSMH in a read square." />
-            </figure>
-            <figure class="gallery-item">
-                <img class="thumbnail" src="images/galleryArt/GlibAndTibMaryAndTheWitchesFlower.png" alt="Fan Art! 2 cats, Glib and Tib, from Mary and the witches flower lounging in the grass." />
-            </figure>
-            <figure class="gallery-item">
-                <img class="thumbnail" src="images/galleryArt/Rock_Lee.png" alt="Fan Art! Rock Lee's face from Naruto in his drunken fist/drunken monkey martial arts pose." />
-            </figure>
-            <figure class="gallery-item">
-                <img class="thumbnail" src="images/galleryArt/fanArtMilesMorales.png" alt="Fan Art! Miles Morales in his Spidey outfit from Into the Spiderverse." />
-            </figure>
-            <figure class="gallery-item">
-                <img class="thumbnail" src="images/galleryArt/chamomileTea.png" alt="Cute Moe-girl representation of chamomile tea." />
-            </figure>
-            <figure class="gallery-item">
-                <img class="thumbnail" src="images/galleryArt/Wink_Tier.png" alt="Cute, blue haired anime girl winking with a heart emoji." />
-            </figure>
-            <figure class="gallery-item">
-                <img class="thumbnail" src="images/galleryArt/peaceSignOC.png" alt="Cute, blue haired anime boy with peace sign and abstract shapes in background." />
-            </figure>
-            <figure class="gallery-item">
-                <img class="thumbnail" src="images/galleryArt/Alien_Adventurer.png" alt="POC in scifi clothes, beside a crashed spaceship wrapped in vines and an alien snake that's even larger." />
-            </figure>
-            <figure class="gallery-item">
-                <img class="thumbnail" src="images/galleryArt/craftEspressoLogo.gif" alt="Motion graphic of Craft Espresso logo." />
-            </figure>
-            <figure class="gallery-item">
-                <img class="thumbnail" src="images/galleryArt/Elephant_And_Bird.png" alt="Digital painting of bird and elephant." />
-            </figure>
-            <figure class="gallery-item">
-                <img class="thumbnail" src="images/galleryArt/Rose_Afro_2019.jpg" alt="A beautiful black woman with afro made of roses peering through a magnifying glass whose lens is reflecting another rose." />
-            </figure>
-            <figure class="gallery-item">
-                <img class="thumbnail" src="images/galleryArt/Fan_Art_Scavengers.png" alt="Fan Art! A bwwm interracial couple in alien world - my homage the short film scavengers by Joseph Bennet and Charles Huettner." />
-            </figure>
-            <figure class="gallery-item">
-                <img class="thumbnail" src="images/galleryArt/adventureTime.gif" alt="Fan Art! Animated Gif of characters from Adventure Time by Pendelton Ward." />
-            </figure>
-            <figure class="gallery-item">
-                <img class="thumbnail" src="images/galleryArt/bobRossQuotePSManipulation.png" alt="Talent is a pursued interest. Anything you're willing to practice, you can do. Bob Ross" />
-            </figure>
-        </div>
-    </section>
 
-    <!--Skills-->
+    <!--Skills GOOD NUFF-->
     <section class="container" id="skills">
         <div class="row">
             <h2 class="col-sm-12">Skills</h2>
         </div>
-        <div class="row">
-            <ul class="col-sm-6">
-                <li class="underline nobull">Visual Art</li>
-                <li>Procreate 5</li>
-                <li>Adobe Photoshop</li>
-                <li>Adobe Illustrator</li>
-                <li>Adobe After Effects*</li>
-                <li>Adobe Media Encoder*</li>
-            </ul>
-            <ul class="col-sm-6">
-                <li class="underline nobull">Coding</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Bootstrap*</li>
-                <li>JavaScript*</li>
-                <li>Python*</li>
-            </ul>
-        </div>
-        <div class="row">
-            <p class="col-sm-12" id="beginner-center">*Beginner</p>
-        </div>
+        
         <!--Skills Section Place Holder with icons of programs i use and/or cv skill list?-->
         <div class="row" id="skill-icons">
-            <div class="gallery">
+            <img src="images/programIcons2020/procreate-512.png" alt="procreate illustration app"/>
+            <img src="images/programIcons2020/photoshop-512.png" alt="adobe photoshop"/>
+            <img src="images/programIcons2020/illustrator-512.png" alt="adobe illustrator"/>
+            <img src="images/programIcons2020/afterEffects-512.png" alt="adobe after effects"/>
+            <img src="images/programIcons2020/mediaEncoder-512.png" alt="adobe media encoder"/>
+            <img src="images/programIcons2020/clipstudioicon.png" alt="clip studio clip studio paint"/>
+        </div>
+
+        <div class="row" id="skill-icons">
+                <img src="images/programIcons2020/html-5.png" alt="html 5"/>
+                <img src="images/programIcons2020/css3alt.png" alt="css"/>
+                <img src="images/programIcons2020/bootstrap512.png" alt="bootstrap"/>
+                <img src="images/programIcons2020/javascript.png" alt="java script"/>
+                <img src="images/programIcons2020/xcode icon 512.png" alt="xcode apple developer environment"/>
+        </div>
+        <div class="row">
+            <h3 class="col-sm-12 center">&#46;&#46;&#46; and more&#33;</h3>
+        </div>
+            
+
+            <!--
+            <div>
                 <figure class="gallery-item"><img src="images/programIcons2020/procreate-512.png" /></figure>
                 <figure class="gallery-item"><img src="images/programIcons2020/photoshop-512.png" /></figure>
                 <figure class="gallery-item"><img src="images/programIcons2020/illustrator-512.png" /></figure>
                 <figure class="gallery-item"><img src="images/programIcons2020/afterEffects-512.png" /></figure>
                 <figure class="gallery-item"><img src="images/programIcons2020/mediaEncoder-512.png" /></figure>
+                <figure class="gallery-item"><img src="images/programIcons2020/clipstudioicon.png" /></figure>
                 <figure class="gallery-item"><img src="images/programIcons2020/html-5.png" /></figure>
                 <figure class="gallery-item"><img src="images/programIcons2020/css3.png" /></figure>
-                <figure class="gallery-item"><img src="images/programIcons2020/bootstrap.png" /></figure>
+                <figure class="gallery-item"><img src="images/programIcons2020/bootstrap512.png" /></figure>
                 <figure class="gallery-item"><img src="images/programIcons2020/javascript.png" /></figure>
-                <figure class="gallery-item"><img src="images/programIcons2020/python.png" /></figure>
             </div>
+            -->
+    </section>
+
+    
+    <!-- GALLERY 2.0 HORIZONTAL SCROLL maybe just with class mods and scroll snap-->
+    <section class="container" id="gallery-id">
+        <div class="row"> <!--art gallery Section header row-->
+            <h2 class="col-sm-12 center">Art Gallery</h2>
+        </div> 
+
+        <!--basic gallery media element format      
+            <div class="media-element">
+                <img loading="lazy" src="" alt="" />
+                <p id="media-element-caption"></p>
+            </div> 
+        -->
+        
+        <!--FAN ART-->
+        
+        <div class="col-sm-12 center"> <!--MAIN FAN ART BUTTON-->
+            <button  id="galleryButton" onclick="showHideFunction('fanArt')">
+                <img src="images/galleryArt/newerArt/jjk sukuna.jpg" />
+                <p>FAN ART</p>
+            </button> 
+        </div>  
+
+        <div id="fanArt"> <!--SUBCATEGORY FAN ART BUTTONS AND GALLERY-->
+            <div class="row">
+
+                <!--NEWER Fan ART FOLDER GOOD NUFF 1 of 2-->
+                <div class="col-sm-6 center"> <!--new fanart BUTTON -->
+                    <button  id="galleryButton" onclick="showHideFunction('newFanArt')">
+                        <img src="images/galleryArt/2020 - 22 digital/Mako_Kill_La_Kill_figurecolorBG.png" />
+                        <p>newer</p>
+                    </button>
+
+                    <div id="newFanArt"> <!--newer drop down content-->
+                        <div class="media-scroller with-overscroll snaps-inline snaps--individual">
+                            
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/2020 - 22 digital/Michiko_Malandro_.png" alt="Michiko Malandro fan art of CheHeavens cosplay" />
+                                <p id="media-element-caption">Michiko Malandro based on CheHeaven&#39;s Cosplay &#40;Mitchiko &#38; Hatchin&#41;</p>
+                            </div>  
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/2020 - 22 digital/Mako_Kill_La_Kill_figurecolor.png" alt="Mako from kill la kill with white bg" />
+                                <p id="media-element-caption">Mako Makanshoku &#40;Kill La Kill&#41;</p>
+                            </div>  
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/2020 - 22 digital/Mako_Kill_La_Kill_figurecolorBG.png" alt="Mako full color and color background" />
+                                <p id="media-element-caption">Mako Makanshoku &#38; Background &#40;Kill La Kill&#41;</p>
+                            </div> 
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/2020 - 22 digital/Korra.png" alt="Avatar Korra in T pose flex" />
+                                <p id="media-element-caption">Korra&#39;s Flex &#40;Avatar&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/2020 - 22 digital/crunchyrollHimeFanSubmission.png" alt="Crunchyroll Hime Fan Submission" />
+                                <p id="media-element-caption">Crunchyroll Hime</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/2020 - 22 digital/DnD campaign npcs from premade module.PNG" alt="premade dnd module npc character fan art" />
+                                <p id="media-element-caption">The Dragons of Stormwreck Isle NPC Portrait Redesign &#40;Dungeons &#38; Dragons&#41;</p>
+                            </div>
+
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/newerArt/jjk sukuna.jpg" alt="Sukuna from JJK anime fan art" />
+                                <p id="media-element-caption">Sukuna &#40;Jujutsu Kaisen&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img id="rotate-90" loading="lazy" src="images/galleryArt/newerArt/sakamotoDaysfanart.jpg" alt="sakamoto days fan art" />
+                                <p id="media-element-caption">Cover Redraw Practice &#40;Sakamoto Days&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/olderHandDrawn/eurydice hades.jpg" alt="Eurydice from Hades game fan art" />
+                                <p id="media-element-caption">Eurydice &#40;Hades&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/newerArt/chainsawman power.jpg" alt="Power from Chainsaw Man anime fan art" />
+                                <p id="media-element-caption">Power  &#40;Chainsaw Man&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img id="rotate-90" loading="lazy" src="images/galleryArt/olderHandDrawn/samurai champloo png.png" alt="fuu from samurai champloo in comedic mid fall moment" />
+                                <p id="media-element-caption">Fuu &#40;Samurai Champloo&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img id="rotate-90" loading="lazy" src="images/galleryArt/olderHandDrawn/gokushufudou noname.png" alt="Tatsu from Way of the House Husband Gokushufudou Manga Fan Art" />
+                                <p id="media-element-caption">Tatsu &#40;Gokushufudou&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/newerArt/jjk goujo.jpg" alt="jjk satoru gojo sensei fan art" />
+                                <p id="media-element-caption">Satoru Gojo Sketch &#40;Jujutsu Kaisen&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/olderHandDrawn/master roshi dbz noname.png" alt="Master Roshi DBZ fan art" />
+                                <p id="media-element-caption">Roshi&#47;Kame Sensei &#40;DBZ&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/olderHandDrawn/hikariKuina Alice in borderlands fan art.jpg" alt="Hikari Kuina Alice in borderlands fan art" />
+                                <p id="media-element-caption">Hikari Kuina&#8205; &#127752; &#40;Alice in Borderlands&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/newerArt/devilish darlings fan art.jpg" alt="Devilish Darlings 2 monster babes fan art" />
+                                <p id="media-element-caption">Nia &#38; Rosette &#40;Devilish Darlings&#41;</p>
+                            </div>
+
+                        
+                        </div>
+                    </div>
+
+                </div>
+                
+                <!--OLDER FAN ART FOLDER GOOD NUFF 2 of 2-->
+                <div class="col-sm-6 center"> <!--old fanart BUTTON-->
+                    <button  id="galleryButton" onclick="showHideFunction('oldFanArt')">
+                        <img src="images/galleryArt/2020 - 22 digital/Goku_Son_Dragon_Ball.png" />
+                        <p>older</p>
+                    </button>
+    
+                    <div id="oldFanArt"> <!--Old Art Drop down content-->
+                        <div class="media-scroller with-overscroll snaps-inline snaps--individual">
+                            
+                            <div class="media-element">
+                                <img  loading="lazy" src="images/galleryArt/olderArt/Rock_Lee.png" alt="Fan Art! Rock Lee's face from Naruto in his drunken fist martial arts pose." />
+                                <p id="media-element-caption">Drunken Fist Rock Lee &#40;Naruto&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img  loading="lazy" src="images/galleryArt/2020 - 22 digital/Seis_Manos.png" alt="Fan Art! Seis Manos from Netflix scene." />
+                                <p id="media-element-caption">Bar Story Guy &#40;Seis Manos&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/olderArt/GlibAndTibMaryAndTheWitchesFlower.png" alt="Cats Glib and Tib from Mary and the Witches Flower fan art" />
+                                <p id="media-element-caption">Glib and Tib &#40;Mary and the Witch&#39;s Flower&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img  loading="lazy" src="images/galleryArt/2020 - 22 digital/Goku_Son_Dragon_Ball.png" alt="Fan Art! gokuson bust" />
+                                <p id="media-element-caption">Goku &#40;Dragon Ball&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img  loading="lazy" src="images/galleryArt/2020 - 22 digital/Your_Lie_In_April.png" alt="Fan Art! your lie in april screen cap redraw." />
+                                <p id="media-element-caption">Kaori Miyazono &#40;Your Lie In April&#41;</p>
+                            </div>
+                           
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/olderHandDrawn/pokemon warmups.jpg" alt="Warmup page of pokemon sketches" />
+                                <p id="media-element-caption">Warmup Sketches &#40;Pok&#233;mon&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/newerArt/rooster fighter fan art.jpg" alt="rooster fighter fan art warm up" />
+                                <p id="media-element-caption">Warmup Sketch &#40;Rooster Fighter&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/newerArt/hellsing ultimate alucard.jpg" alt="quick sketch of alucrad from hellsing ultimate fan art" />
+                                <p id="media-element-caption">Alucard &#40;Hellsing Ultimate&#41;</p>
+                            </div>
+
+                            <div class="media-element">
+                                <img id="rotate-90" loading="lazy" src="images/galleryArt/olderHandDrawn/sam cannonbusters noname.png" alt="Friendly bipoc android bodyguard named SAM from Cannon Busters" />
+                                <p id="media-element-caption">SAM &#40;Cannon Busters&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/olderHandDrawn/blue period noname.png" alt="Blue Period Yatora Yaguchi" />
+                                <p id="media-element-caption">Yaguchi &#40;Blue Period&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/olderHandDrawn/odd taxi.jpg" alt="Odd Taxi fan art" />
+                                <p id="media-element-caption">Odokawa &#40;Odd Taxi&#41;</p>
+                            </div>
+
+
+                            <div class="media-element">
+                                <img  loading="lazy" src="images/galleryArt/olderArt/May_4.png" alt="Fan Art! My redesign of Chewbacca the Wookie for May the 4th." />
+                                <p id="media-element-caption">May the Fourth Chewbacca &#40;Star Wars&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img  loading="lazy" src="images/galleryArt/olderArt/Midnight_Gospel.png" alt="Fan Art! Clancy from Midnight Gospel entering the simulator as it malfunctions." />
+                                <p id="media-element-caption">Malfunctioning Simulator &#40;Midnight Gospel&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img  loading="lazy" src="images/galleryArt/olderArt/fanArtMilesMorales.png" alt="Fan Art! Miles Morales in his Spidey outfit from Into the Spiderverse." />
+                                <p id="media-element-caption">Miles Morales &#40;Into the Spiderverse&#41;</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+
+            </div>        
+        </div>
+
+        <!--MY ART-->
+
+        <div class="col-sm-12 center"> <!--MAIN MY ART BUTTON-->         
+            <button  id="galleryButton" onclick="showHideFunction('myArt')">
+                <img src="images/galleryArt/olderArt/Elephant_And_Bird.png" />
+                <p>MY ART</p>
+            </button>
+        </div>
+
+        <div id="myArt"> <!--SUBCATEGORY MY ART BUTTONS AND GALLERY-->
+
+           
+    
+            <div class="row"> <!--analog and digital folders row -->
+                <div class="col-sm-6 center"> <!--MY handdrawn only / analog FOLDER GOOD NUFF-->
+                    <button  id="galleryButton" onclick="showHideFunction('analogArt')">
+                        <img src="images/galleryArt/painting/board 05.jpg" />
+                        <p>analog</p>
+                    </button>
+                    
+                    <div id="analogArt"> <!--my analogf drop down content-->
+                        <div class="media-scroller with-overscroll snaps-inline snaps--individual">
+    
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/newerArt/still life.jpg" alt="still life ink sketch of bottles" />
+                                <p id="media-element-caption">Ink Warmup Sketch 1</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/newerArt/still life sketch waiting on food.jpg" alt="still life flower sketch" />
+                                <p id="media-element-caption">Ink Warmup Sketch 2</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/olderHandDrawn/charcoal portrait drawing.JPG" alt="charcoal portrait" />
+                                <p id="media-element-caption">Charcoal Portrait</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/newerArt/lovebirds.jpg" alt="love birds sketch" />
+                                <p id="media-element-caption">Love Birds</p>
+                            </div>
+
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/painting/board 01.jpg" alt="unpainted skateboard" />
+                                <p id="media-element-caption">Skatedeck Paint Process &#45; Blank Canvas 1&#47;5</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/painting/board 02.jpg" alt="white paint base with sketch lines of shapes layout ideas and paint tape with yellow border" />
+                                <p id="media-element-caption">Underdrawing 2&#47;5</p>
+                            </div>
+                            <div class="media-element">
+                                <img id="rotate-90" loading="lazy" src="images/galleryArt/painting/board 03.jpg" alt="lines in black paint pen on skateboard now depict geomteric shapes, surreal third eye head with organic shapes pouring out" />
+                                <p id="media-element-caption">Linework 3&#47;5</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/painting/board 04.jpg" alt="board fully painted outside drying with blue face red yellow purple organic shapes and black geometric shapes" />
+                                <p id="media-element-caption">Colors and Clear Coat 4&#47;5</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/painting/board 05.jpg" alt="board fully painted displayed on wall with blue face red yellow purple organic shapes and black geometric shapes" />
+                                <p id="media-element-caption">Organic Dreams 5&#47;5</p>
+                            </div>
+                            
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/painting/board close up bottom.jpg" alt="close up on blue third eye head with colorful organic shapes pouring out gold border" />
+                                <p id="media-element-caption">Organic Dreams Close Up 1&#47;3</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/painting/board close up mid.jpg" alt="close up on mid board with large geometric shapes and more organic spillage gold border" />
+                                <p id="media-element-caption">Organic Dreams Close Up 2&#47;3</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/painting/board close up top.jpg" alt="close up on top of board with smaller geometry, a few organic color blobs and a flower gold border" />
+                                <p id="media-element-caption">Organic Dreams Close Up 3&#47;3</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="col-sm-6 center"> <!--MY digital  ART FOLDER GOOD NUFF-->
+                    <button  id="galleryButton" onclick="showHideFunction('myDigitalArt')">
+                        <img src="images/galleryArt/olderArt/Rose_Afro_2019.jpg" />
+                        <p>digital</p>
+                    </button>
+    
+                    <div id="myDigitalArt"> <!--my digital Art Drop down content-->
+                        <div class="media-scroller with-overscroll snaps-inline snaps--individual">
+                            
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/olderArt/Elephant_And_Bird.png" alt="Digital painting of bird and elephant." />
+                                <p id="media-element-caption">Watching Nature Documentaries</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/olderArt/stormy waves vector.png" alt="stormy sea waves vector drawing" />
+                                <p id="media-element-caption">Stormy Waves</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/2020 - 22 digital/world icon.png" alt="earth globe icon for cafe espresso video" />
+                                <p id="media-element-caption">Earth Icon for Animation</p>
+                            </div> 
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/2020 - 22 digital/money icon.png" alt="silly fake money icon i made for class project cafe espresso video" />
+                                <p id="media-element-caption">Silly Money Icon</p>
+                            </div> 
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/2020 - 22 digital/sandy the cat fullset.jpg" alt="Sandy the cat is a free imessages sticker app avaiable on the appstore" />
+                                <p id="media-element-caption">Sandy the Cat &#40;Free iMessages Sticker App&#41;</p>
+                            </div>
+
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/olderArt/Rose_Afro_2019.jpg" alt="A beautiful fem BIPOC with afro made of roses peering through a magnifying glass whose lens is reflecting another rose." />
+                                <p id="media-element-caption">Discovering Mysteries of Nature &#40;Adobe PSD Challenge&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/olderArt/ps daily challenge type and texture.jpg" alt="PS Daily Challenge on adobe live to make a poster my say breath in out relax" />
+                                <p id="media-element-caption">Hand&#45;drawn Mandalas&#44; Type and Texture  &#40;Adobe PSD Challenge&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/olderArt/bobRossQuotePSManipulation.png" alt="Bob Ross quote on stock photo background with some photo manipulation" />
+                                <p id="media-element-caption">Inspirational Poster &#40;Adobe PSD Challenge&#41;</p>
+                            </div>
+                            
+                            
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/olderArt/Alien_Adventurer_2.png" alt="alien octopus like entity examinig a shiny rock" />
+                                <p id="media-element-caption">I Like This Shiny Rock</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/olderArt/Alien_Adventurer.png" alt="BIPOC in scifi clothes, beside a crashed spaceship wrapped in vines and an alien snake that's even larger." />
+                                <p id="media-element-caption">Trade Negotiations</p>
+                            </div>
+                            
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/2020 - 22 digital/DTIYS_Davilorium.png" alt="Character design redraw my draw this in your style challenge of davilorium character" />
+                                <p id="media-element-caption">Character Design Redraw &#40;Davilourium DTIYS Challenge&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/olderArt/cha moe tea commission.png" alt="Moe chamomile tea with chinese character for tea" />
+                                <p id="media-element-caption">Moe Chamomile Tea</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/2020 - 22 digital/Ashenkittymaid_Commission_.png" alt="Character design commission for clients oc" />
+                                <p id="media-element-caption">Cat Maid Commission &#40;Client OC&#41;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row"> <!--MY animation folder GOOD NUFF-->
+                <div class="col-sm-12 center"> 
+                    <button  id="galleryButton" onclick="showHideFunction('animation')">
+                        <img src="images/galleryArt/animation/globe gif.gif" />
+                        <p>animation</p>
+                    </button>
+    
+                    <div id="animation"> <!--animation Drop down content-->
+                        <div class="media-scroller with-overscroll snaps-inline snaps--individual">
+                            
+                            
+                            <div class="media-element">
+                                <video controls>
+                                    <source src="images/galleryArt/animation/Walk_Cycle_02_slower_-_mannequin-mp4.mp4" type="video/mp4">
+                                    Your browser does not support this video format&#46;
+                                </video>
+                                <p id="media-element-caption">Rough Walk Cycle &#40;Speed Test Animatic&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <video controls>
+                                    <source src="images/galleryArt/animation/cafe espresso movie clip.mp4" type="video/mp4">
+                                    Your browser does not support this video format&#46;
+                                </video>
+                                <p id="media-element-caption">Coffee Infographic with Sound &#40;Class Project&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/animation/upper half  walk cycle (denji strut reference).gif" alt="rough animatic trying to analyze the Denjis strut from chainsaw man anime" />
+                                <p id="media-element-caption">Denji&#39;s Confident Strut &#40;Study&#41;</p>
+                            </div>
+    
+                            <div class="media-element">
+                                <video controls>
+                                    <source src="images/galleryArt/animation/single explosion 01.mp4" type="video/mp4">
+                                  Your browser does not support this video format&#46;
+                                </video> 
+                                <p id="media-element-caption">2DFX Small Explosion Animatic</p>
+                            </div>
+                            <div class="media-element">
+                                <video controls>
+                                    <source src="images/galleryArt/animation/dome explosion 01 6s.mp4" type="video/mp4">
+                                    Your browser does not support this video format&#46;
+                                </video>
+                                <p id="media-element-caption">2DFX Large Explosion 6fps Animatic</p>
+                            </div>
+
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/animation/globe gif.gif" alt="Animated globe gif" />
+                                <p id="media-element-caption">Globe Animation</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/animation/DSMH_motionfx.gif" alt="Animated Logo DSMH" />
+                                <p id="media-element-caption">Hand&#45;drawn Logo Animation</p>
+                            </div>
+                            
+                           
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/2020 - 22 digital/Angles_Using_Assets_wide.png" alt="wide angle of old west saloon" />
+                                <p id="media-element-caption">Wider Angle Storybeat &#40;Class Project&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/2020 - 22 digital/Angles_Using_Assets_long.png" alt="long angle of old west saloon porch deck area with cowboy" />
+                                <p id="media-element-caption">Long Angle Storybeat &#40;Class Project&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/2020 - 22 digital/Angles_Using_Assets_dutchLow.png" alt="dutch low angle of old west shoot out" />
+                                <p id="media-element-caption">Low Dutch Angle Storybeat &#40;Class Project&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/2020 - 22 digital/Angles_Using_Assets_close.png" alt="close up storbeat of cowboy talking" />
+                                <p id="media-element-caption">Close Angle Storybeat &#40;Class Project&#41;</p>
+                            </div>
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/2020 - 22 digital/Layout_practice_prep lines.png" alt="bar scene layout with grid lines in place" />
+                                <p id="media-element-caption">Layout Redraw Bar &#40;Class Project&#41;</p>
+                            </div>
+
+                            <div class="media-element">
+                                <img loading="lazy" src="images/galleryArt/animation/craftEspressoLogo.gif" alt="Vector animation logo Craft Espresso Faux coffee shop" />
+                                <p id="media-element-caption">Animated Vector Logo &#40;Class Project&#41;</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    
+        <div id="sandyTheCatRow"> <!--Sandy the Cat -->
+            <div class="row">
+                <div class="col-sm-12 center"> <!--button-->
+                    <button id="galleryButton2" onclick="showHideFunction('sandyTheCatDropDown')">
+                        <img  src="images/galleryArt/2020 - 22 digital/sandy-the-cat.jpg" alt="sandy the cat sticker"/>
+                    </button>
+                    <div id="sandyTheCatDropDown">
+                
+                        <div class="media-scroller with-overscroll snaps-inline snaps--individual">
+                            <div class="media-element2">
+                                <img loading="lazy" src="images/galleryArt/2020 - 22 digital/sandy the cat mockup.jpg" alt="sandy the cat mockup" />
+                            </div>
+                            
+                            <div class="media-element2">
+                                <img loading="lazy" src="images/galleryArt/2020 - 22 digital/sandy-the-cat screengrab2.jpg" alt="sandy the cat applestore screencap" />
+                            </div>
+                            <div class="media-element2">
+                                <img loading="lazy" src="images/galleryArt/2020 - 22 digital/sandy-the-cat screengrab1.jpg" alt="sandy the cat applestore screencap" />
+                            </div>
+                            <div class="media-element2">
+                                <img loading="lazy" src="images/galleryArt/2020 - 22 digital/sandy-the-cat screengrab3.jpg" alt="sandy the cat applestore screencap" />
+                            </div>
+
+                            <div class="media-element2">
+                                <img loading="lazy" src="images/galleryArt/2020 - 22 digital/sandy the cat appstore.jpg" alt="sandy the cat applestore screencap" />
+                            </div>
+                        </div>
+                          
+                    </div>
+                </div>
+            </div>   
+
+            
+            <div class="row">
+                <div class="col-sm-12 center"> <!--embeded appstore link for free stickers-->
+                    <a href="https://apps.apple.com/us/app/sandy-the-cat/id1619515598?itsct=apps_box_badge&amp;itscg=30200" target="_blank" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1650153600" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a>
+                </div>
+            </div>
+
+
         </div>
     </section>
 
+    <!--END OF GALLERY-->
 
-    <!--CONTACT Section-->
+    <!--CONTACT Section GOOD NUFF-->
     <section class="jumbotron jumbotron-fluid" id="contact">
         <div class="container">
             <div class="row">
-                <h2 class="col-sm-12">Contact Me</h2>
+                <h2 class="col-12">Contact Me</h2>
             </div>
             <div class="row">
-                <p class="col-sm-12">I'm currently available for freelance!<br /><strong>davidsethdesigns@gmail.com</strong></p>
-            </div>
+                <p class="col-12">Please direct inquiries to <strong>davidsethdesigns@gmail.com</strong></p>
+            </div>    
+            
+        </div>
+        <div class="container">
+            
         </div>
     </section>
 
     </main>
 
-    <!--FOOTER-->
+    <!--FOOTER GOOD NUFF-->
     <footer class="container">
         <div class="row">
-            <p class="col-4">&copy; 2020 David Seth Designs</p>
-            <ul class="col-8">
-                <li id="behance-button" class="col-1">
+            <ul class="col-sm-12" id="externalPortfolioLinks">
+                <li>
                     <a href="https://www.behance.net/davidsethdesigns" target="_blank">
-                        <img src="images/iconBehanceLightGreen.png" alt="behance logo" />
+                        <img src="images/externalLink/behance-512-green-alt.png" alt="Behance Adobe logo" />
                     </a>
                 </li>
-                <li class="col-1">
+                <li>
                     <a href="https://github.com/plantbasedcode" target="_blank">
-                        <img src="images/iconGithubLightGreenAlt.png" alt="github logo" />
+                        <img src="images/externalLink/github-512-green.png" alt="Github logo" />
                     </a>
                 </li>
-                <li class="col-1">
+                <li>
                     <a href="https://www.linkedin.com/in/davidsethweitzel" target="_blank">
-                        <img src="images/iconLinkedIn.png" alt="LinkedIn logo" />
+                        <img src="images/externalLink/iconLinkedIn.png" alt="LinkedIn logo" />
                     </a>
                 </li>
+
             </ul>
-        </div>
+        </div> <!--other website profile icons row-->
+
+       
+        
         <div class="row">
-            <p class="col-12 center">Version 1.01</p>
-        </div>
+            <p class="col-sm-12 center" id="small-text">Lotus blossom stock photo courtesy of Japan-based photographer&#160;<a href="https://unsplash.com/@sorasagano" target="_blank">Soras Sogano&#33;</a></p>
+        </div> <!--credit citations row-->
+
+        <div class="row">
+            <p class="col-4 start" id="x-small-text">&copy;&#160;2011&#160;&#45;&#160;2023 David Seth Designs &#40;DSMH MDD &#38; DSW&#41;</p>
+            <p class="col-4 center" id="small-text">Version 1.3</p>
+            <p class="col-4 end" id="x-small-text"></p>
+        </div> <!--version and copyright-->
+
     </footer>
 
+    <!--SPECIAL THANKS to 
+    Temitope Ayodele https://dev.to/temmietope bluring and transparency tricks and ways to write cleaner code 
+    Kevin Powell https://www.youtube.com/@KevinPowell horizontal media scroller with css and scroll snap
+    Adam Argyle https://web.dev/building-a-media-scroller-component/ horizontal media with css
+    Ben at codestruct https://allround.io/articles/a-nifty-alternative-to-box-shadows filter drop shadows for organic shapes wooo
+    alvarotrigo CSS text animation 
+    -->
 </body>
 
 </html>
