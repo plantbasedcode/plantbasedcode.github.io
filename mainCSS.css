@@ -1,114 +1,172 @@
 ﻿/*Color Scheme 01: #436a3d (Dark Green), #698365 (Light Green),  #836569 (Rose Brown?), #f5f5f5 (WhiteSmoke)*/
+/*Color Scheme 02: #436a3d dark green #32502e dark green a shade or so darker #3d6a64 analagous blue to dark green #2e504b shade darker of analagous blue #698365 light green #4A5C47 shade darker of light green #6A3FEB purple #9BC295 super light green, white smoke*/
+/*alternative bg colors for darkmode #1c1c1c */
 
 body {
     font-family: 'Trebuchet MS', 'Helvetica', sans-serif;
     margin: 0;
-    background-color: #f5f5f5;
+    background-color: #1c1c1c; /*from scratch dark mode for now*/
 }
+
 
 header {
     padding: 0;
-    margin: 1.25rem 0;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
     font-size: 2rem;
 }
 
-/*Flex made this possible - learn more later*/
-header .row,
-footer .row {
+header .row { 
     display: flex;
     align-items: center;
 }
 
 header h1 {
     font-weight: 400;
-    color: #436a3d;
+    color: #4A5C47;
     margin: 0;
+    text-align: center;
 }
+
 
 header nav {
     display: flex;
     justify-content: flex-end;
     color: #698365;
+    text-align: center;
 }
 
-nav a {
+header nav a {
     color: #698365;
+    
 }
 
-nav a:hover {
-    color: #836569;
+header nav a:hover {
+    color: #4A5C47;
     text-decoration: none;
+    text-shadow: rgba(0, 0, 0) 1px 0 3px;
 }
 
 header p {
-    padding: 0;
-    margin:0 1rem;
+    margin: 1rem; /*spacing between nav a links - padding is for text inside element margin for seperating different divs or larger pieces*/
 }
+
+
+/*https://alvarotrigo.com/blog/css-text-animations/*/
+
+.animate-text
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #698365 0%,
+    #4A5C47 25%,
+    #41513e 40%,
+    #698365 50%,
+    #41513e 60%,
+    #4A5C47 75%,
+    #698365 100%
+  );
+
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 3rem;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/*END HEADER*/
+
+/*return to top button styling version 2*/
+
+#topButton {
+    display: none;  
+    position: fixed;
+    bottom: 1rem;
+    right: 1.1rem;
+    z-index: 99;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background-color: rgba(105,131,101, .2); 
+    color: rgba(245, 245, 245, .5); 
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    backdrop-filter: blur(4px);
+  }
+
+  #topButton:hover {
+    text-shadow: rgba(0, 0, 0) 1px 0 3px; 
+    box-shadow: #FC0 0 0 10px;
+  }
+
+
+/*version 1top button
+#topButton {
+    display: none;  
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgba(105,131,101, .5); 
+    color: rgba(245, 245, 245, .5); 
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+  }
+  
+  
+#topButton:hover {
+    background-color: rgba(105,131,101, .7);
+    text-shadow: #FC0 1px 0 10px; 
+    box-shadow: #FC0 0 0 10px;
+  }
+*/
+
 /*Welcome Message*/
 #welcome-message {
     display: flex;
-    background-image: url(images/galleryArt/Rose_Afro_2019.jpg);
+    background-image:
+    radial-gradient(transparent, rgb(0, 0, 0) 100%),  /*this is a vignette maker excellent for dark mode application*/
+    url(images/galleryArt/olderArt/Elephant_And_Bird.png); 
     background-size: cover;
-    margin-top: 2rem;
-    color: whitesmoke;
+    color: rgba(245, 245, 245, .8);
     font-size: 2rem;
     text-shadow: 0.1rem 0.1rem 0.1rem #000000;
     text-align: center;
 }
 
+/*maybe draw this and link him as photo ref source instead that could be cool https://images.unsplash.com/photo-1466354424719-343280fe118b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80 */
+
 #welcome-message h2 {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
     font-size: 4rem;
     font-weight: 200;
     text-shadow: 0.2rem 0.2rem 0.2rem #000;
-    /* "Position+Transform" worked as a fix before I switched the html h2 tag to col-sm-12 so that text-center would work
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
 }
 
+/*END WELCOME MSG*/
 
-/*Gallery Start*/
-#gallery-id {
-    color: #436a3d;
-    margin-top: 2rem;
-}
 
-#gallery-id h2 {
-    text-align: center;
-    font-size: 4rem;
-}
-
-/*flex-wrap: wrap brings all the images inside the border of every gallery-item*/
-.gallery {
-    margin-top: 1.25rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-
-/*gallery item class selector for figure tag - the frames*/
-.gallery-item {
-    /*border: .4rem solid #000;*/
-    margin: 1.25rem;
-}
-
-/*class selector for img tag inside figure*/
-.thumbnail {
-   height: 18rem;
-   width: 18rem;
-   object-fit: cover;
-}
-
-/*End Gallery*/
 
 /*SKILLS*/
 #skills {
-    background-color: whitesmoke;
-    color: #698365;
-    font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -116,47 +174,259 @@ header p {
 #skills h2 {
     font-size: 4rem;
     font-weight: 200;
-    color: #436a3d;
+    color: #4A5C47;
     text-align: center;
+    margin-bottom: 2rem;
     /*text-shadow: 0.2rem 0.2rem 0.2rem #000;*/
 }
 
-#skills ul {
+#skills h3 {
+    font-size: 2rem;
+    font-weight: 200;
+    color: #4A5C47;
     text-align: center;
-}
-
-.nobull {
-    list-style-type: none;
+    margin-bottom: 1rem;
+    /*text-shadow: 0.2rem 0.2rem 0.2rem #000;*/
 }
 
 #skill-icons {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    background-color: rgba(0, 0, 0, .25);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: .5rem;
 }
 
 #skill-icons img {
     width: 5rem;
     height: 5rem;
+    margin: 1rem;
+    border-radius: 20%;
+    filter: brightness(90%);
 }
 
-#beginner-center {
-    text-align: center;
+/*END SKILLS*/
+
+
+
+/*GALLERY 2.0 Start*/
+
+#gallery-id { /*defines the Parent container of Gallery*/
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
+
+#gallery-id h2 {
+    color: #4A5C47;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+#gallery-id h3 {
+    color: rgba(74, 92, 71, .8);
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+
+
+
+#galleryButton { /*BUTTON STYLING - actual code in JS showHideFunction*/
+    border: none;
+    border-radius: 4px;
+    padding: 0;
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    outline-width: 0;
+    
+}
+
+#galleryButton img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    inline-size: 100%;
+    filter: blur(3px);
+    
+}
+
+
+#galleryButton p {
+    color: rgba(245, 245, 245, .8);
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    bottom: 69%;
+}
+
+#gallery-id button:hover {
+    filter: drop-shadow(0 0 .8rem rgba(245, 245, 245, .5));  /*LOVE filter drop shadow*/
+    color: rgba(245, 245, 245, .8);
+    text-shadow: 0.1rem 0.1rem 0.3rem #000000;
+}
+
+
+.media-scroller { /*thank you Kevin Powell */
+    display:grid;
+    grid-auto-flow: column; /*columns (not rows) get it horizontal*/
+    grid-auto-columns: 28%; /*dont put at easily divisible into 100 eg 25% or 50% put it slightly off eg 21% or 36% to show that there is more content just beyong to scroll towards*/
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+
+    gap: 10px;
+
+
+    overflow-x: auto; /*this gives you a horizontal scrolling bar in the media scroller section instead of having to scroll the entire webpage horizontally which would no longer be the ribbon i want */
+    overscroll-behavior-inline: contain; /*when user reaches the end of the scroll, they wont keep scrolling in the parent container, its like a limiting break factor*/
+    /*background-color: rgba(0,0,0,.3); */ /*transparent background using alpha because this ONLY affects background vs the whole box... current rendering looks way better anyway imo*/
+    /*opacity: rgba(0,0,0,.5); *//*transparency using alpha on ENTIRE box doesnt render the same - evaluate this puzzle later*/
+} 
+
+.media-element { /*containers in each column these will house the images or video thumbnails*/
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .5); 
+
+}
+  
+.media-element img { /*VERY IMPORTANT this alters the size or aspect ratio, it auto crops the image to fit*/
+    inline-size: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+.media-element video {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    inline-size: 100%;
+}
+
+#media-element-caption { /*aka captions for gallery photos*/
+    color: #698365;
+    text-align: center;
+    margin-top: .5rem;
+    
+}
+
+#rotate-90 {
+    transform: rotate(-90deg);
+}
+
+#sandyTheCatRow {
+    background-color: rgba(0, 0, 0, .15);
+}
+
+#sandyTheCatRow a {
+    margin: 1.5rem;
+    filter: brightness(85%);
+}
+
+#sandyTheCatRow a:hover {
+    filter: drop-shadow(0 0 .8rem rgba(106, 63, 235));
+}
+
+#galleryButton2 {
+    width: 10rem;
+    height: 10rem;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline-width: 0;
+    margin-top: 1.5rem;
+}
+
+#galleryButton2 img {
+    inline-size: 100%;
+    aspect-ratio: 1 /1;
+    object-fit: cover;  
+    filter: brightness(90%);
+}
+
+#galleryButton2 :hover {
+    filter: drop-shadow(0 0 .8rem rgba(245, 245, 245, .5));  /*LOVE filter drop shadow*/
+    color: rgba(245, 245, 245, .6); 
+}
+
+#sandyTheCatDropDown {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+
+.media-element2 {
+    margin: 1.5rem;
+}
+  
+.media-element2 img { /*VERY IMPORTANT this alters the size or aspect ratio, it auto crops the image to fit*/
+    inline-size: 100%;
+    aspect-ratio: 9 / 16;
+    object-fit: contain;
+    filter: brightness(85%);
+}
+
+/*class selector for img tag inside figure keeps it from being permanently overstretched
+.thumbnail {
+    height: 18rem;
+    width: 18rem;
+    object-fit: cover;
+ }
+  */
+
+
+/* OLD GALLERY ITEMS TO BE DELETED ???*/
+
+/*flex-wrap: wrap brings all the images inside the border of every gallery-item
+.gallery {
+    margin-top: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+*/
+
+/*gallery item class selector for figure tag - the frames 
+.gallery-item {
+    border: .4rem solid #000; this was commented out too
+    margin: 1.25rem;
+    
+}
+
+*/
+
+
+
+
+/*END Gallery*/
+
+
+
 
 /*CONTACT*/
 #contact {
-    background-image: url(https://source.unsplash.com/3jKqzhpiGuk);
+    background-image:
+    radial-gradient(transparent, rgb(0, 0, 0) 120%), 
+    url(https://images.unsplash.com/photo-1625980953551-50502b3b8b2f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80);
     background-size: cover;
-    color: whitesmoke;
+    color: rgba(245, 245, 245, .8);
     text-shadow: 0.1rem 0.1rem 0.1rem #000000;
     font-size: 2rem;
     text-align: center;
+    justify-content: center;
+    
 }
+
 
 #contact h2 {
     font-size: 4rem;
     font-weight: 200;
     text-shadow: 0.2rem 0.2rem 0.2rem #000;
+    text-align: top;
 }
+
+
 
 /*FOOTER*/
 footer {
@@ -165,36 +435,81 @@ footer {
     margin-bottom: 1rem;
 }
 
-footer .col-8 {
+footer .col-12 {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
-footer .col-1 {
-    margin-left: 2rem;
+
+#externalPortfolioLinks {
+    display: flex;
+    justify-content:center;
 }
+
+footer a:link {
+    color: #4A5C47;
+    background-color: transparent;
+    text-decoration: #4A5C47;
+
+ }
+  
+footer  a:visited {
+    color: #4A5C47;
+    background-color: transparent;
+    text-decoration:  #4A5C47;
+  }
+  
+footer  a:hover {
+    color: #6A3FEB;
+    background-color: transparent;
+    text-decoration: wavy underline #6A3FEB
+  }
+  
+footer  a:active {
+    color: #6A3FEB;
+    background-color: transparent;
+    text-decoration: wavy underline #6A3FEB;
+  }
 
 /*removes bullet points*/
 footer ul {
     list-style: none;
 } 
 
-/*behance icon was made in 1200x904px canvas so 4:3 ratio keeps it from being warped*/
+footer li {
+    margin-left: 2rem;
+}
+
+
 footer li img {
     width: 4rem;
     height: 4rem;
+    border-radius: 50%;
+    filter: brightness(85%);
 }
 
-/*github icon was made in 512x512px square canvas so no need to warp*/
-#behance-button {
-    width: 4rem;
-    height: 3rem;
+footer li img:hover {
+    box-shadow: 0px 0px 5px 2px #6A3FEB; /*adds a highlight shadow behind the item for UI horizontal offset follows border INPUTS are vertical offset, blur distance, actual?*/
+    filter: brightness(100%);
 }
 
-.underline {
-    text-decoration: underline;
+
+/*IDs for easily altering text size*/
+
+#smaller-text {
+    font-size: smaller;
+}
+
+#x-small-text {
+    font-size: x-small;
+}
+
+#xx-small-text{
+    font-size: xx-small;
 }
 
 .center {
     text-align: center;
 }
+
+/*credit to https://unsplash.com/@sorasagano stock photos*/
